@@ -1,0 +1,62 @@
+/* Centralizar a paginação */
+.container_pagination {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+/* Estilo da lista de paginação */
+.pagination {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 0.5em;
+  /* Espaçamento entre itens */
+}
+
+/* Estilo dos itens de página */
+.pagination .page-item {
+  display: inline-block;
+}
+
+/* Estilo dos links de página */
+.pagination .page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  /* Largura fixa para uniformidade */
+  height: 40px;
+  /* Altura fixa para uniformidade */
+  font-size: 16px;
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: var(--dark-orange);
+  /* transition: background-color 0.3s, color 0.3s; */
+}
+
+/* Cor de fundo e cor de texto ao passar o mouse */
+.pagination .page-link:active {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+/* Estilo do item ativo */
+.pagination .page-item.active .page-link {
+  background-color: #007bff;
+  color: #fff;
+  pointer-events: none;
+  border: none;
+}
+
+@media screen and (min-width: 1025px) {
+  .pagination .page-link{
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .pagination .page-link:hover {
+    background-color: var(--blue);
+    color: var(--white);
+  }
+}

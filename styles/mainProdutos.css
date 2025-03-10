@@ -1,0 +1,297 @@
+.swiper-slide {
+    background: var(--white);
+    display: flex;
+}
+
+.mySwiper2 {
+    margin-top: 1em;
+    height: 22em;
+    width: 20em;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+}
+
+.mySwiper {
+    height: 6em;
+    /* Ajuste a altura das miniaturas */
+    width: 11em;
+    /* Ajuste a largura das miniaturas */
+    box-sizing: border-box;
+    margin: 0.5em;
+    cursor: pointer;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    margin: auto;
+}
+
+.img_1 {
+    margin: 1em auto 0 auto;
+    height: 22em;
+    width: 20em;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+}
+
+.img_1 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+}
+
+/* Define que as setas do Swiper não sejam visíveis em dispositivos móveis */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+    /* Oculta as setas por padrão */
+}
+
+.container__infos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    text-align: left;
+    margin: 1.5em 2.3em;
+}
+
+.infos__h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.p {
+    font-size: 1em;
+    font-weight: 200;
+    width: 95%;
+    white-space: pre-line;
+}
+
+.infos__h2 {
+    color: var(--blue);
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    gap: 0.5em;
+}
+
+.titulo {
+    color: var(--dark-orange);
+    font-size: 1.7em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.orcamento__links {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 0.8em;
+}
+
+.orcamento__contato-btn {
+    color: var(--white);
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: var(--dark-orange);
+    text-decoration: none;
+    padding: 0.8em;
+}
+
+.orcamento__zap {
+    width: 50px;
+    /* Largura do botão */
+    height: 50px;
+    /* Altura do botão */
+}
+
+.orcamento__zap-img {
+    display: flex;
+    /* Usado para centralizar o conteúdo */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* Largura do botão */
+    height: 100%;
+    /* Altura do botão */
+    background-color: #25d366;
+    /* Cor de fundo */
+    border-radius: 50%;
+    /* Bordas arredondadas */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    /* Sombra do botão */
+    text-decoration: none;
+    /* Remove underline do link */
+    color: #fff;
+    /* Cor do texto */
+    transition: transform 0.5s ease;
+    /* Transição ao passar o mouse */
+}
+
+.orcamento__zap-img img {
+    width: 100%;
+    /* Largura da imagem */
+    height: auto;
+    /* Altura automática para manter a proporção */
+}
+
+.hr {
+    margin: 0;
+    margin-bottom: 1em;
+    background-color: black;
+    border: none;
+    height: 2px;
+    width: 90%;
+    margin-left: 1em;
+}
+
+.container__descricao {
+    margin-bottom: 0.8em;
+}
+
+.info-adicional {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-weight: 600;
+}
+
+.info-adicional img {
+    width: 15%;
+    height: auto;
+}
+
+.container__info-adicional {
+    margin-bottom: 2em;
+}
+
+.container__info-adicional-tela768px {
+    display: flex;
+    gap: 2em;
+    
+}
+
+.container__info-adicional img {
+    width: 45px;
+    height: 45px;
+}
+
+.orcamento__contato-btn:active {
+    background-color: var(--blue);
+}
+
+.infos__h1{
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        display: block;
+        /* Mostra as setas */
+    }
+
+    .container__swiper-ajuste-de-tela {
+        max-width: 100%;
+        max-height: 100%;
+        margin: 1em auto 0;
+        /* margin-bottom: auto;
+        margin-left: 1em; */
+    }
+
+    .container__posicionamento__tela-768px {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 95%;
+    }
+    
+}
+
+@media screen and (min-width: 1025px) {
+
+    .container__posicionamento__tela-768px {
+        width: 75%;
+        /* width: 100%;         O main ocupa toda a largura em telas menores */
+        /* max-width: 1400px;    Define a largura máxima para telas maiores */
+        margin: 0 auto;
+        justify-content: center;
+        /* Centraliza o main horizontalmente */
+        box-sizing: border-box;
+        /* Inclui padding no cálculo da largura */
+        flex-direction: row;
+        /* min-height: 100vh; */
+    }
+
+    .container__swiper-ajuste-de-tela {
+        max-width: 50%;
+        max-height: 50%;
+        margin: 1em 0.5em 0 0;
+    }
+
+    .infos__h1 {
+        font-size: 2em;
+    }
+
+    .infos__h2 {
+        font-size: 2em;
+    }
+
+    .p {
+        font-size: 1.2em;
+        white-space: pre-line;
+    }
+
+    .titulo {
+        font-size: 2em;
+    }
+
+    .orcamento__contato-btn {
+        transition: 0.5s;
+    }
+
+    .orcamento__contato-btn:hover {
+        background-color: var(--blue);
+    }
+
+    .mySwiper2 {
+        /* margin-top: 1em; */
+        width: 100%;
+        height: 30vw;
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 1em;
+    }
+
+    .container__swiper-ajuste-de-tela{
+        width: 40%;
+    }
+
+    .container____posicionamento__tela-768px-descricaoOrcamento{
+        width: 60%;
+    }
+    
+    .container__posicionamento__tela-768px{
+        min-height: 90vh;
+    }
+
+    .img_1 {
+        margin: auto;
+        width: 100%;
+        height: 30vw;
+    }
+
+}
