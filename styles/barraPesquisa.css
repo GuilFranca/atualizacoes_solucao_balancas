@@ -1,0 +1,30 @@
+.div__barra__pesquisa{
+    justify-self: center;
+    width: 100%;
+    padding-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.input__barra__pesquisa{
+    border: 1px solid black;
+    width: 85%;
+    margin: 0;
+    border-radius: 15px 0 0 15px;
+    border: 2px solid var(--dark-orange);
+}
+
+.button__barra__pesquisa{
+    background-color: var(--dark-orange);
+    color: white;
+    border: none;
+    border-radius: 0 15px 15px 0;
+}
+
+@media screen and (min-width: 1025px) {
+    .div__barra__pesquisa{
+        width: 95%;
+        margin-bottom: 1em;
+    }
+
+}

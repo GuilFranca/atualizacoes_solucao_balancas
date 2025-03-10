@@ -24,6 +24,8 @@ efficient when loading the website */
 @import url("./styles/contato.css");
 /* main do pagination */
 @import url("./styles/pagination.css");
+/* main da barra de pesquisa */
+@import url("./styles/barraPesquisa.css");
 
 @import url("./styles/promocao.css");
 
