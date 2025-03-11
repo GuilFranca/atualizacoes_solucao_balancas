@@ -561,7 +561,7 @@ const inputPesquisa = document.querySelector('.input__barra__pesquisa');
 const botaoPesquisa = document.querySelector('.button__barra__pesquisa');
 
 // Verifica se a página atual é a index
-const estaNaIndex = window.location.pathname === '/' || window.location.pathname.includes('index.html');
+const estaNaIndex = window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname.endsWith('/');
 
 // Define o caminho correto para os links de imagens e páginas
 const caminhoImagem = estaNaIndex ? "./images_produtos/" : "../images_produtos/";
