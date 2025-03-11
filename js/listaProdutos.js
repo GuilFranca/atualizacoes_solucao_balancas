@@ -460,6 +460,7 @@ let paginaAtual = 1;
 
 function mostrarProdutos(pagina) {
     const secaoCardTitulo = document.querySelector('.secaoCard__titulo').textContent.trim().toLowerCase();
+    const estaNaIndexOuMaisProcurados = secaoCardTitulo === 'mais procurados' || window.location.pathname.includes("index");
 
     let produtosFiltrados;
 
@@ -494,11 +495,11 @@ function mostrarProdutos(pagina) {
     produtosParaMostrar.forEach(produto => {
         const estaEmPromocao = produto.promocao.trim() !== ''; // Verifica se há promoção
         const precoClasse = estaEmPromocao ? "promotion__color" : ""; // Adiciona classe condicionalmente
+        const caminhoBase = estaNaIndexOuMaisProcurados ? "./" : "../"; // Define o caminho correto
 
-        if (secaoCardTitulo === 'mais procurados') {
-            secaoCard.innerHTML += `
+        secaoCard.innerHTML += `
             <div class="cardProduto">
-                <img src="./images_produtos/${produto.cod}.png" alt="${produto.nome}" class="cardProduto_img">
+                <img src="${caminhoBase}images_produtos/${produto.cod}.png" alt="${produto.nome}" class="cardProduto_img">
                 <h1 class="cardProduto_descricao">${produto.nome}</h1>
                 <p class="cardProduto_cod">Cod: ${produto.cod}</p>
                 <p class="cardProduto_preco ${precoClasse}">
@@ -509,33 +510,15 @@ function mostrarProdutos(pagina) {
                         R$${produto.preco} à vista
                     `}
                 </p>
-                <a href="./pages_produtos/${produto.cod}.html" class="cardProduto_link">Saiba Mais</a>
+                <a href="${caminhoBase}pages_produtos/${produto.cod}.html" class="cardProduto_link">Saiba Mais</a>
             </div>
         `;
-        } else {
-            secaoCard.innerHTML += `
-            <div class="cardProduto">
-                <img src="../images_produtos/${produto.cod}.png" alt="${produto.nome}" class="cardProduto_img">
-                <h1 class="cardProduto_descricao">${produto.nome}</h1>
-                <p class="cardProduto_cod">Cod: ${produto.cod}</p>
-                <p class="cardProduto_preco ${precoClasse}">
-                    ${estaEmPromocao ? `
-                        <span class="preco-antigo">R$${produto.vezes}</span> <br> 
-                        <span class="preco-novo">R$${produto.promocao} à vista</span>
-                    ` : `
-                        R$${produto.preco} à vista
-                    `}
-                </p>
-                <a href="../pages_produtos/${produto.cod}.html" class="cardProduto_link">Saiba Mais</a>
-            </div>
-        `;
-        }
-
     });
 
     // Atualiza a paginação corretamente
     gerarPaginacao(pagina, totalProdutos);
 }
+
 
 
 
@@ -569,6 +552,8 @@ function gerarPaginacao(pagina, totalProdutos) {
     botaoProximo.disabled = pagina === totalPaginas;
     botaoProximo.addEventListener('click', () => mostrarProdutos(pagina + 1));
     secaoPaginacao.appendChild(botaoProximo);
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // Captura os elementos da barra de pesquisa
