@@ -561,7 +561,7 @@ const inputPesquisa = document.querySelector('.input__barra__pesquisa');
 const botaoPesquisa = document.querySelector('.button__barra__pesquisa');
 
 // Verifica se a página atual é a index
-const estaNaIndex = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
+const estaNaIndex = window.location.pathname === '/' || window.location.pathname.includes('index.html');
 
 // Define o caminho correto para os links de imagens e páginas
 const caminhoImagem = estaNaIndex ? "./images_produtos/" : "../images_produtos/";
@@ -569,7 +569,7 @@ const caminhoPagina = estaNaIndex ? "./pages_produtos/" : "../pages_produtos/";
 
 // Função para pesquisar produtos na lista
 function pesquisarProdutos() {
-    const termoPesquisa = inputPesquisa.value.trim().toLowerCase();
+    let termoPesquisa = inputPesquisa.value.trim().toLowerCase();
 
     if (termoPesquisa === '') {
         // Se o campo estiver vazio, exibe todos os produtos
@@ -627,6 +627,5 @@ inputPesquisa.addEventListener('keypress', (event) => {
         pesquisarProdutos();
     }
 });
-
 
 mostrarProdutos(1);
