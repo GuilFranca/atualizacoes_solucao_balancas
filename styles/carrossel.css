@@ -1,6 +1,7 @@
 .carrossel{
     margin: 1em auto;
     width: 95%;
+    padding-top: 35px;
 }
 
 .swiper-slide img{
@@ -39,6 +40,7 @@
 
     .carrossel{
         margin: 1em auto;
+        padding-top: 0;
     }
 
 }
@@ -57,6 +59,7 @@
 
     .carrossel{
         margin: auto;
+        padding-top: 0;
     }
   
 }

@@ -417,10 +417,36 @@
     <!-- Main Begins -->
     <main>
 
-        <div class="div__barra__pesquisa__mobile">
-            <input type="search" class="input__barra__pesquisa__mobile">
-            <button class="button__barra__pesquisa__mobile"><i class="ri-search-line"></i></button>
-        </div>
+        <!-- Carrossel Begins -->
+        <section class="carrossel">
+            <!-- Div criada para ajudar a posicionar na tela de 1728px -->
+            <div class="carrossel__container">
+                <!-- Slider main container -->
+                <div class="swiper">
+
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><a href="./pages_categorias/promocoes.html"><img
+                                    src="../images_banners/banner_ofertas.png" alt=""></a>
+                        </div>
+                        <div class="swiper-slide"><a href="./pages_navegation/assistencia.html"><img
+                                    src="../images_banners/banner_assistencia.png" alt=""></a></div>
+                        <div class="swiper-slide"><a href="./pages_categorias/etiquetas.html"><img
+                                    src="../images_banners/banner_etiquetas.png" alt=""></a>
+                        </div>
+                    </div>
+
+                    <!-- Elemento que só aparece em telas de no minimo 1024px-->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                </div>
+        </section>
+        <!-- Carrossel Ends -->
 
         <!-- Mais procurados Begins -->
         <section class="secaoMaisProcurados">

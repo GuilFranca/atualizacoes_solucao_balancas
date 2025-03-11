@@ -1,7 +1,6 @@
 .secaoMaisProcurados {
     width: 95%;
     margin: auto;
-    /* min-height: 90vh; */
 }
 
 .secaoCard__titulo {
@@ -19,60 +18,70 @@
     height: 2px;
 }
 
+/* Container dos cards usando CSS Grid */
 .secaoCard__main {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     gap: 1em;
+    /* Espaçamento padrão entre os cards */
     margin-bottom: 1em;
-    justify-content: center;
 }
 
+/* Estilos base para os cards */
 .cardProduto {
     display: flex;
     flex-direction: column;
-    width: 42%;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     text-align: center;
     justify-content: space-between;
     gap: 0.5em;
     padding: 0.5em;
+    height: 100%;
+    /* Garante que o card ocupe toda a altura da linha */
 }
 
+/* Imagem do card */
 .cardProduto_img {
     padding: 0.5em;
     height: 35vw;
     object-fit: contain;
+    max-height: 200px;
+    /* Limita a altura máxima da imagem */
 }
 
+/* Descrição do card */
 .cardProduto_descricao {
     color: var(--black);
     font-size: 16px;
     margin: 0.5em 0;
     height: 3em;
+    /* Altura fixa para a descrição */
     line-height: 1.5em;
     text-transform: uppercase;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    /* Limita o texto a 2 linhas */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
+/* Preço do card */
 .cardProduto_preco {
     font-size: 16px;
     color: var(--blue);
     font-weight: 600;
 }
 
+/* Código do card */
 .cardProduto_cod {
     font-size: 1em;
     font-weight: 200;
     width: 95%;
     white-space: pre-line;
-    /* display: none; */
 }
 
+/* Link do card */
 .cardProduto_link {
     color: var(--white);
     border-radius: 10px;
@@ -81,82 +90,90 @@
     text-decoration: none;
     padding: 0.5em;
     font-size: 16px;
-    /* transition: 0.5s; */
 }
 
 .cardProduto_link:active {
     background-color: var(--blue);
 }
 
-.cardfake1 {
-    display: flex;
-    flex-direction: column;
-    width: 42%;
-    /* box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1); */
-    text-align: center;
-    justify-content: space-between;
-    gap: 0.5em;
-    padding: 0.5em;
-}
+/* Versão mobile: 2 cards por linha */
+@media screen and (max-width: 767px) {
+    .secaoCard__main {
+        grid-template-columns: repeat(2, 1fr);
+        /* 4 colunas */
+        gap: 1.5em;
+        /* Espaçamento padrão */
+        justify-self: center;
+        min-height: 45vh;
+    }
 
-.cardfake2 {
-    display: flex;
-    flex-direction: column;
-    width: 44%;
-    /* box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1); */
-    text-align: center;
-    justify-content: space-between;
-    gap: 0.5em;
-    padding: 0.5em;
-}
-
-.cardfake4 {
-    display: none;
-    /* display: flex; */
-    flex-direction: column;
-    width: 100%;
-    height: 75vh;
-    /* box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1); */
-    text-align: center;
-    justify-content: space-between;
-    gap: 0.5em;
-    padding: 0.5em;
-}
-
-.none {
-    display: none;
-}
-
-@media screen and (min-width: 768px) {
     .cardProduto {
-        width: 20%;
+        width: 155px;
+        height: 315px;
+    }
+
+    .cardProduto_img {
+        height: 30vw;
+    }
+
+    .cardProduto {
+        padding: 0.5em;
+        /* Padding menor no mobile */
+    }
+}
+
+/* Versão tablet: 3 cards por linha */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .secaoCard__main {
+        grid-template-columns: repeat(4, 1fr);
+        /* 4 colunas */
+        gap: 1.5em;
+        /* Espaçamento padrão */
+        justify-self: center;
+    }
+
+    .cardProduto {
+        width: 200px;
+        height: 375px;
     }
 
     .cardProduto_img {
         height: 20vw;
     }
 
-    .cardfake1 {
-        width: 20%;
+    .secaoMaisProcurados {
+        min-height: 75vh;
     }
 
-    .cardfake2 {
-        width: 44%;
+    .secaoMaisProcurados {
+        padding-top: 1em;
     }
 
-    .none {
-        display: flex;
+    .secaoMaisProcurados {
+        padding-top: 0;
     }
 
 }
 
+/* Versão desktop: 4 cards por linha */
 @media screen and (min-width: 1025px) {
     .secaoMaisProcurados {
         width: 75%;
+        min-height: 55vh;
+        padding-top: 0;
+    }
+
+    .secaoCard__main {
+        grid-template-columns: repeat(4, 1fr);
+        /* 4 colunas */
+        gap: 1.5em;
+        /* Espaçamento padrão */
+        justify-self: center;
     }
 
     .cardProduto {
-        width: 22%;
+        width: 200px;
+        height: 380px;
     }
 
     .cardProduto_img {
@@ -166,22 +183,10 @@
     .cardProduto_link {
         padding: 0.5em;
         font-size: 18px;
-    }
-
-    .cardProduto_link {
         transition: 0.5s;
     }
 
     .cardProduto_link:hover {
         background-color: var(--blue);
     }
-
-    .cardfake1 {
-        width: 22%;
-    }
-
-    .cardfake2 {
-        width: 47%;
-    }
-
 }

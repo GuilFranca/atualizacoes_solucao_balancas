@@ -203,9 +203,12 @@
 }
 
 @media screen and (min-width: 768px) {
-
     .nav__list {
         font-size: 24px;
+    }
+
+    .nav__data {
+        align-items: center;
     }
 
     .nav__data img {

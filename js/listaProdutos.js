@@ -109,8 +109,6 @@ function gerarPaginacao(pagina) {
 // Função pesquisa
 const inputPesquisa = document.querySelector('.input__barra__pesquisa');
 const btnPesquisa = document.querySelector('.button__barra__pesquisa');
-const inputPesquisaMobile = document.querySelector('.input__barra__pesquisa__mobile');
-const btnPesquisaMobile = document.querySelector('.button__barra__pesquisa__mobile');
 const secaoMaisProcurados = document.querySelector('.secaoMaisProcurados');
 
 // Verificar se há um termo de pesquisa salvo ao carregar a página
@@ -135,17 +133,7 @@ btnPesquisa.addEventListener('click', function () {
     pesquisa();
 });
 
-btnPesquisaMobile.addEventListener('click', function () {
-    pesquisa();
-});
-
 inputPesquisa.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter') {
-        pesquisa();
-    }
-});
-
-inputPesquisaMobile.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
         pesquisa();
     }
