@@ -34,10 +34,23 @@
         display: flex;
         position: static;
         margin-bottom: 1em;
+        padding-right: 10em;
     }
 
     .input__barra__pesquisa {
         max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .div__barra__pesquisa {
+        padding-right: 10em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .div__barra__pesquisa {
+        padding-right: 0;
     }
 }
 
