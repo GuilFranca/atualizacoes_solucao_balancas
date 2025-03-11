@@ -222,26 +222,37 @@ function pesquisa() {
 }
 
 function mostrarCategoriaProdutos(pagina) {
+    // Captura o título da seção e normaliza o texto
+    const filtro = document.querySelector('.secaoCard__titulo').textContent.trim().toLowerCase();
+
+    if (!filtro) {
+        console.warn("Nenhuma categoria ou subcategoria encontrada no título.");
+        return;
+    }
+
+    // Filtrar produtos que pertencem à categoria OU à subcategoria correspondente
+    const produtosFiltrados = listaProdutos.filter(produto => 
+        produto.categoria.toLowerCase() == filtro || produto.subcategoria.toLowerCase() == filtro
+    );
+
     const inicio = (pagina - 1) * cardsPorPagina;
     const fim = inicio + cardsPorPagina;
-
-    // Usar filtroProdutos em vez de listaProdutos
-    const produtosParaMostrar = filtroProdutos.slice(inicio, fim);
+    const produtosParaMostrar = produtosFiltrados.slice(inicio, fim);
 
     const secaoCard = document.querySelector('.secaoCard__main');
-    secaoCard.innerHTML = ''; // Limpar o conteúdo atual antes de adicionar novos produtos
+    secaoCard.innerHTML = ''; // Limpar antes de adicionar novos produtos
+
+    // Se não houver produtos, exibir mensagem
+    if (produtosParaMostrar.length === 0) {
+        secaoCard.innerHTML = "<p>Nenhum produto encontrado nesta categoria ou subcategoria.</p>";
+        return;
+    }
 
     produtosParaMostrar.forEach(produto => {
-    
-    if(produto.categoria === 'açougue'){
-        const nome = produto.nome;
-        const cod = produto.cod;
-        const preco = produto.preco;
-        const categoria = produto.categoria;
+        const { nome, cod, preco, categoria, subcategoria } = produto;
 
         // Adicionar o card do produto
         secaoCard.innerHTML += `
-            <!-- Card starts -->
             <div class="cardProduto">
                 <img src="../images_produtos/${cod}.png" alt="${nome}" class="cardProduto_img">
                 <h1 class="cardProduto_descricao">${nome}</h1>
@@ -249,16 +260,15 @@ function mostrarCategoriaProdutos(pagina) {
                 <p class="cardProduto_preco">R$${preco} à vista</p>
                 <a href="../pages_produtos/${cod}.html" class="cardProduto_link">Saiba Mais</a>
                 <p class='categoria' hidden>${categoria}</p>
+                <p class='subcategoria' hidden>${subcategoria}</p>
             </div>
-            <!-- Card ends -->
         `;
-    }
-
     });
 
     // Atualizar a paginação
     gerarPaginacao(pagina);
 }
 
+// Chamar a função ao carregar a página
 mostrarCategoriaProdutos(paginaInicial);
 
