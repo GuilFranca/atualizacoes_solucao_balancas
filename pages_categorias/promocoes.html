@@ -22,6 +22,11 @@
 
                 <a href="../index.html"><img src="../images/logo.png" alt="Logo Solução Balanças"></a>
 
+                <div class="div__barra__pesquisa">
+                    <input type="search" class="input__barra__pesquisa">
+                    <button class="button__barra__pesquisa"><i class="ri-search-line"></i></button>
+                </div>
+
                 <div class="nav__toggle" id="nav-toggle">
 
                     <p class="nav__catalogo">Catalogo</p>
@@ -450,105 +455,12 @@
             <h1 class="secaoCard__titulo">Promoções do mês</h1>
             <hr class="secaoCard__hr" />
 
-            <div class="secaoCard__main">
+            <div class="secaoCard__main"></div>
 
-                <!-- Card starts -->
-                <div class="cardProduto">
-
-                    <img src="../images_produtos/85.jpg" alt="AUTO SERVIÇO 3 PORTAS ASFL 2000" class="cardProduto_img">
-
-                    <h1 class="cardProduto_descricao">AUTO SERVIÇO 3 PORTAS ASFL 2000</h1>
-
-                    <p class="cardProduto_cod">Cod: 85</p>
-
-                    <p class="cardProduto_promocao">R$ 12,990 x6</p>
-
-                    <p class="cardProduto_preco promotion__color">R$10.990,00 à vista</p>
-
-                    <a href="../pages_produtos/85.html" class="cardProduto_link">Saiba Mais</a>
-
-                </div>
-                <!-- Card ends -->
-
-                <!-- Card starts -->
-                <div class="cardProduto">
-
-                    <img src="../images_produtos/6658.png" alt="Fogão Industrial 8 Bocas P7 tradicional light.MR"
-                        class="cardProduto_img">
-
-                    <h1 class="cardProduto_descricao">Fogão Industrial 8 Bocas P7 tradicional light.MR</h1>
-
-                    <p class="cardProduto_cod">Cod: 6658</p>
-
-                    <p class="cardProduto_promocao">R$2.290 x6</p>
-
-                    <p class="cardProduto_preco promotion__color">R$1.900,00 à vista</p>
-
-                    <a href="../pages_produtos/6658.html" class="cardProduto_link">Saiba Mais</a>
-
-                </div>
-                <!-- Card ends -->
-
-                <!-- Card starts -->
-                <div class="cardProduto">
-
-                    <img src="../images_produtos/5549.png" alt="Forno Gás Industrial FIRIV 110" class="cardProduto_img">
-
-                    <h1 class="cardProduto_descricao">Forno Gás Industrial FIRIV 110 PINTADO</h1>
-
-                    <p class="cardProduto_cod">Cod: 5549</p>
-
-                    <p class="cardProduto_promocao">R$3.990 x6</p>
-
-                    <p class="cardProduto_preco promotion__color">R$3.290,00 à vista</p>
-
-                    <a href="../pages_produtos/5549.html" class="cardProduto_link">Saiba Mais</a>
-
-                </div>
-                <!-- Card ends -->
-
-                <!-- Card starts -->
-                <div class="cardProduto">
-
-                    <img src="../images_produtos/8313.png" alt="Misturador coocktop 10L PRMQ-10"
-                        class="cardProduto_img">
-
-                    <h1 class="cardProduto_descricao">Misturador coocktop 10L PRMQ-10 Progás</h1>
-
-                    <p class="cardProduto_cod">Cod: 8313</p>
-
-                    <p class="cardProduto_promocao">R$2.190 x6</p>
-
-                    <p class="cardProduto_preco promotion__color">R$1.890,00 à vista</p>
-
-                    <a href="../pages_produtos/8313.html" class="cardProduto_link">Saiba Mais</a>
-
-                </div>
-                <!-- Card ends -->
-
-                <!-- Card starts -->
-                <div class="cardProduto">
-
-                    <img src="../images_produtos/9916.png" alt="Fogão Industrial 8 Bocas P7 tradicional light.MR"
-                        class="cardProduto_img">
-
-                    <h1 class="cardProduto_descricao">VISA COOLER MULTIUSO ECONOMY 4 PORTAS</h1>
-
-                    <p class="cardProduto_cod">Cod: 9916</p>
-
-                    <p class="cardProduto_promocao">R$13.990 x6</p>
-
-                    <p class="cardProduto_preco promotion__color">R$12.990,00 à vista</p>
-
-                    <a href="../pages_produtos/9916.html" class="cardProduto_link">Saiba Mais</a>
-
-                </div>
-                <!-- Card ends -->
-
-            </div>
+            <!-- Paginação -->
+            <ul id="paginacao" class="paginacao"></ul>
 
         </section>
-
         <!-- Mais procurados Ends -->
 
     </main>
@@ -617,6 +529,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- link swiper -->
     <script src="../js/swiper.js"></script>
+    <!-- link mostrar produtos-->
+    <script src="../js/listaProdutos.js"></script>
 
 </body>
 
