@@ -561,7 +561,8 @@ const inputPesquisa = document.querySelector('.input__barra__pesquisa');
 const botaoPesquisa = document.querySelector('.button__barra__pesquisa');
 
 // Verifica se a página atual é a index
-const estaNaIndex = window.location.pathname === '/' || window.location.pathname === '/index.html' || window.location.pathname.endsWith('/');
+const estaNaIndex = window.location.pathname === '/' || window.location.pathname.endsWith('/index.html') || window.location.pathname.endsWith('/');
+
 
 // Define o caminho correto para os links de imagens e páginas
 const caminhoImagem = estaNaIndex ? "./images_produtos/" : "../images_produtos/";
@@ -569,7 +570,7 @@ const caminhoPagina = estaNaIndex ? "./pages_produtos/" : "../pages_produtos/";
 
 // Função para pesquisar produtos na lista
 function pesquisarProdutos() {
-    let termoPesquisa = inputPesquisa.value.trim().toLowerCase();
+    const termoPesquisa = inputPesquisa.value.trim().toLowerCase();
 
     if (termoPesquisa === '') {
         // Se o campo estiver vazio, exibe todos os produtos
@@ -581,7 +582,9 @@ function pesquisarProdutos() {
     // Filtra os produtos que contenham o termo pesquisado no nome ou no código
     const produtosFiltrados = listaProdutos.filter(produto =>
         produto.nome.toLowerCase().includes(termoPesquisa) ||
-        produto.cod.includes(termoPesquisa)
+        produto.cod.toLowerCase().includes(termoPesquisa) ||
+        produto.categoria.toLowerCase().includes(termoPesquisa) ||
+        produto.subcategoria.toLowerCase().includes(termoPesquisa)
     );
 
     const secaoCard = document.querySelector('.secaoCard__main');
@@ -589,6 +592,8 @@ function pesquisarProdutos() {
 
     if (produtosFiltrados.length === 0) {
         secaoCard.innerHTML = `<p>Nenhum produto encontrado.</p>`;
+        document.querySelector('.paginacao').innerHTML = '';
+        document.querySelector('.secaoCard__titulo').textContent = `${termoPesquisa}`;
         return;
     }
 
@@ -627,5 +632,6 @@ inputPesquisa.addEventListener('keypress', (event) => {
         pesquisarProdutos();
     }
 });
+
 
 mostrarProdutos(1);
