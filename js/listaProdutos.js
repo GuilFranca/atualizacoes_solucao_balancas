@@ -1,25 +1,63 @@
 const listaProdutos = [
     {
-        nome: "BALANÇA BA37-C URANO",
-        preco: "7.200,00",
-        cod: "6968",
-        categoria: "balancas"
+        nome: "AMACIADOR DE CARNE INOX ABS-HD",
+        cod: "905",
+        preco: "4.250,00",
+        categoria: "açougue",
+        subcategoria: "AMACIADORES DE BIFE",
+        maisVendidos: "sim",
+        promocao: "",
+        vezes: ""
     },
     {
-        nome: "Impressora Elgin L42PRO",
-        preco: "2.050,00",
-        cod: "188",
-        categoria: "automacao",
-        subcategoria: "impressora"
+        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
+        cod: "443",
+        preco: "52,00",
+        categoria: "açougue",
+        subcategoria: "FACAS",
+        maisVendidos: "sim",
+        promocao: "",
+        vezes: ""
     },
     {
-        nome: "ETIQUETA OPEN",
-        preco: "3,50",
-        cod: "897",
-        categoria: "etiqueta"
+        nome: 'PICADOR DE CARNES GURAL MGI-10',
+        cod: "9530",
+        preco: "3.690,07",
+        categoria: "açougue",
+        subcategoria: "PICADORES DE CARNES",
+        maisVendidos: "sim",
+        promocao: "",
+        vezes: ""
     },
-
+    {
+        nome: 'Alho',
+        cod: "",
+        preco: "",
+        categoria: "",
+        subcategoria: "",
+        maisVendidos: "",
+        promocao: "",
+        vezes: ""
+    },
 ];
+
+// Função para ordenar a lista alfabeticamente pelo nome
+listaProdutos.sort((a, b) => {
+    const nomeA = a.nome.toUpperCase(); // Converter para maiúsculas para evitar problemas com case sensitivity
+    const nomeB = b.nome.toUpperCase();
+
+    if (nomeA < nomeB) {
+        return -1; // "a" vem antes de "b"
+    }
+    if (nomeA > nomeB) {
+        return 1; // "b" vem antes de "a"
+    }
+    return 0; // Nomes iguais
+});
+
+// Exibir a lista ordenada no console
+console.log(listaProdutos);
+
 let filtroProdutos = [...listaProdutos];
 const cardsPorPagina = 20;
 let paginaInicial = 1;
@@ -39,6 +77,7 @@ function mostrarProdutos(pagina) {
         const nome = produto.nome;
         const cod = produto.cod;
         const preco = produto.preco;
+        const categoria = produto.categoria;
 
         // Adicionar o card do produto
         secaoCard.innerHTML += `
@@ -49,6 +88,7 @@ function mostrarProdutos(pagina) {
                 <p class="cardProduto_cod">Cod: ${cod}</p>
                 <p class="cardProduto_preco">R$${preco} à vista</p>
                 <a href="../pages_produtos/${cod}.html" class="cardProduto_link">Saiba Mais</a>
+                <p class='categoria' hidden>${categoria}</p>
             </div>
             <!-- Card ends -->
         `;
@@ -112,22 +152,22 @@ const btnPesquisa = document.querySelector('.button__barra__pesquisa');
 const secaoMaisProcurados = document.querySelector('.secaoMaisProcurados');
 
 // Verificar se há um termo de pesquisa salvo ao carregar a página
-window.addEventListener('load', () => {
-    const termoSalvo = localStorage.getItem('termoPesquisa');
+// window.addEventListener('load', () => {
+//     const termoSalvo = localStorage.getItem('termoPesquisa');
 
-    if (termoSalvo) {
-        // Preencher o campo de pesquisa com o termo salvo
-        inputPesquisa.value = termoSalvo;
+//     if (termoSalvo) {
+//         // Preencher o campo de pesquisa com o termo salvo
+//         inputPesquisa.value = termoSalvo;
 
-        // Aplicar a pesquisa automaticamente
-        pesquisa();
-    } else {
-        // Se não houver termo salvo, mostrar todos os produtos
-        filtroProdutos = [...listaProdutos];
-        mostrarProdutos(paginaInicial);
-        gerarPaginacao(paginaInicial);
-    }
-});
+//         // Aplicar a pesquisa automaticamente
+//         pesquisa();
+//     } else {
+//         // Se não houver termo salvo, mostrar todos os produtos
+//         filtroProdutos = [...listaProdutos];
+//         mostrarProdutos(paginaInicial);
+//         gerarPaginacao(paginaInicial);
+//     }
+// });
 
 btnPesquisa.addEventListener('click', function () {
     pesquisa();
@@ -181,4 +221,44 @@ function pesquisa() {
     gerarPaginacao(pagina);
 }
 
-mostrarProdutos(paginaInicial);
+function mostrarCategoriaProdutos(pagina) {
+    const inicio = (pagina - 1) * cardsPorPagina;
+    const fim = inicio + cardsPorPagina;
+
+    // Usar filtroProdutos em vez de listaProdutos
+    const produtosParaMostrar = filtroProdutos.slice(inicio, fim);
+
+    const secaoCard = document.querySelector('.secaoCard__main');
+    secaoCard.innerHTML = ''; // Limpar o conteúdo atual antes de adicionar novos produtos
+
+    produtosParaMostrar.forEach(produto => {
+    
+    if(produto.categoria === 'açougue'){
+        const nome = produto.nome;
+        const cod = produto.cod;
+        const preco = produto.preco;
+        const categoria = produto.categoria;
+
+        // Adicionar o card do produto
+        secaoCard.innerHTML += `
+            <!-- Card starts -->
+            <div class="cardProduto">
+                <img src="../images_produtos/${cod}.png" alt="${nome}" class="cardProduto_img">
+                <h1 class="cardProduto_descricao">${nome}</h1>
+                <p class="cardProduto_cod">Cod: ${cod}</p>
+                <p class="cardProduto_preco">R$${preco} à vista</p>
+                <a href="../pages_produtos/${cod}.html" class="cardProduto_link">Saiba Mais</a>
+                <p class='categoria' hidden>${categoria}</p>
+            </div>
+            <!-- Card ends -->
+        `;
+    }
+
+    });
+
+    // Atualizar a paginação
+    gerarPaginacao(pagina);
+}
+
+mostrarCategoriaProdutos(paginaInicial);
+
