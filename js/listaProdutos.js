@@ -588,6 +588,7 @@ function pesquisarProdutos() {
 
     if (termoPesquisa === '') {
         // Se o campo estiver vazio, exibe todos os produtos
+        termoPesquisa = '';
         mostrarProdutos(1);
         return;
     }
