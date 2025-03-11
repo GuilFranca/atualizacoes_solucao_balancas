@@ -495,7 +495,7 @@ function mostrarProdutos(pagina) {
         const estaEmPromocao = produto.promocao.trim() !== ''; // Verifica se há promoção
         const precoClasse = estaEmPromocao ? "promotion__color" : ""; // Adiciona classe condicionalmente
 
-        if (secaoCardTitulo === 'Mais Procurados') {
+        if (secaoCardTitulo === 'mais procurados') {
             secaoCard.innerHTML += `
             <div class="cardProduto">
                 <img src="./images_produtos/${produto.cod}.png" alt="${produto.nome}" class="cardProduto_img">
