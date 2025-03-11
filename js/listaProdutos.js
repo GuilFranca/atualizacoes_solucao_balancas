@@ -18,11 +18,12 @@ const listaProdutos = [
         cod: "897",
         categoria: "etiqueta"
     },
-];
 
+];
 let filtroProdutos = [...listaProdutos];
 const cardsPorPagina = 20;
 let paginaInicial = 1;
+
 
 function mostrarProdutos(pagina) {
     const inicio = (pagina - 1) * cardsPorPagina;
@@ -103,6 +104,93 @@ function gerarPaginacao(pagina) {
     }
 
 
+}
+
+// Função pesquisa
+const inputPesquisa = document.querySelector('.input__barra__pesquisa');
+const btnPesquisa = document.querySelector('.button__barra__pesquisa');
+const inputPesquisaMobile = document.querySelector('.input__barra__pesquisa__mobile');
+const btnPesquisaMobile = document.querySelector('.button__barra__pesquisa__mobile');
+const secaoMaisProcurados = document.querySelector('.secaoMaisProcurados');
+
+// Verificar se há um termo de pesquisa salvo ao carregar a página
+window.addEventListener('load', () => {
+    const termoSalvo = localStorage.getItem('termoPesquisa');
+
+    if (termoSalvo) {
+        // Preencher o campo de pesquisa com o termo salvo
+        inputPesquisa.value = termoSalvo;
+
+        // Aplicar a pesquisa automaticamente
+        pesquisa();
+    } else {
+        // Se não houver termo salvo, mostrar todos os produtos
+        filtroProdutos = [...listaProdutos];
+        mostrarProdutos(paginaInicial);
+        gerarPaginacao(paginaInicial);
+    }
+});
+
+btnPesquisa.addEventListener('click', function () {
+    pesquisa();
+});
+
+btnPesquisaMobile.addEventListener('click', function () {
+    pesquisa();
+});
+
+inputPesquisa.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        pesquisa();
+    }
+});
+
+inputPesquisaMobile.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        pesquisa();
+    }
+});
+
+function pesquisa() {
+    const valorFiltro = inputPesquisa.value.toLowerCase();
+
+    // Salvar o termo de pesquisa no localStorage
+    localStorage.setItem('termoPesquisa', valorFiltro);
+
+    if (valorFiltro === '') {
+        secaoMaisProcurados.innerHTML = `
+        <h1 class="secaoCard__titulo">Pesquisa</h1>
+        <hr class="secaoCard__hr" />
+
+        <!-- Container de cards -->
+        <div class="secaoCard__main"></div>
+
+        <!-- Paginação -->
+        <ul id="paginacao" class="paginacao"></ul>
+    `
+    } else {
+        // Atualizar o título da seção de pesquisa
+        secaoMaisProcurados.innerHTML = `
+        <h1 class="secaoCard__titulo">${valorFiltro}</h1>
+        <hr class="secaoCard__hr" />
+
+        <!-- Container de cards -->
+        <div class="secaoCard__main"></div>
+
+        <!-- Paginação -->
+        <ul id="paginacao" class="paginacao"></ul>
+    `
+    }
+
+    // Filtrar produtos com base no nome ou código
+    filtroProdutos = listaProdutos.filter(produto =>
+        produto.nome.toLowerCase().includes(valorFiltro) ||
+        produto.cod.toLowerCase().includes(valorFiltro)
+    );
+
+    // Mostrar os produtos filtrados
+    mostrarProdutos(paginaInicial);
+    gerarPaginacao(pagina);
 }
 
 mostrarProdutos(paginaInicial);

@@ -244,38 +244,37 @@
 
 @media screen and (min-width: 1025px) {
 
-    .nav__catalogo{
+    .nav__catalogo {
         display: none;
     }
-
+    
     .header {
         font-size: var(--font-nav-descktop);
         font-weight: 300;
     }
-
+    
     .nav__toggle {
         display: none;
     }
-
+    
     .nav__link__descktop {
         display: block;
     }
-
+    
     .nav__link__descktop ul {
         display: flex;
         gap: 1.25rem;
-        /* padding: 1rem; */
+        align-items: center;
     }
-
+    
     .nav__link__descktop ul li a {
         text-transform: uppercase;
         color: var(--white);
         position: relative;
-        /* Necessário para o pseudo-elemento ::after */
         padding-bottom: 5px;
-        /* Espaço extra para a linha embaixo */
+        white-space: nowrap;
     }
-
+    
     .nav__link__descktop ul li a::after {
         content: '';
         position: absolute;
@@ -285,34 +284,33 @@
         bottom: 0;
         left: 0;
         transition: width 0.4s ease-in-out;
-        /* Animação da linha */
     }
-
+    
     .nav__link__descktop ul li a:hover::after {
         width: 100%;
-        /* A linha aparece ao passar o mouse */
     }
-
-
+    
     .nav__menu {
         display: none;
     }
-
+    
     .nav__data {
         justify-content: space-between;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 1rem; /* Adicionado para espaço entre elementos */
     }
-
+    
     .nav__data img {
         padding: 1rem 0;
         width: 250px;
     }
-
+    
     .nav__data {
-        /* width: 1250px; */
         width: 80%;
-        /* justify-content: center; */
-        justify-content: space-between;
         margin: auto;
+        align-items: center;
     }
 
 }

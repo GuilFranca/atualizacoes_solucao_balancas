@@ -61,17 +61,3 @@ All fonts and colors must be placed here for organization purpose. */
     --index-menu-open: 10;
 }
 
-/* Positionings and styling that will affect the intire body */
-body {
-    font-family: var(--primary-font);
-    background-color: var(--cor-de-fundo);
-}
-
-a {
-    text-decoration: none;
-}
-
-* {
-    /* Tira o contorno azul dos cliques no mobile */
-    -webkit-tap-highlight-color: transparent;
-}

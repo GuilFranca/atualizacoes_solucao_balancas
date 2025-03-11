@@ -21,6 +21,11 @@
 
                 <a href="../index.html"><img src="../images/logo.png" alt="Logo Solução Balanças"></a>
 
+                <div class="div__barra__pesquisa">
+                    <input type="search" class="input__barra__pesquisa">
+                    <button class="button__barra__pesquisa"><i class="ri-search-line"></i></button>
+                </div>
+
                 <div class="nav__toggle" id="nav-toggle">
 
                     <p class="nav__catalogo">Catalogo</p>
@@ -412,9 +417,9 @@
     <!-- Main Begins -->
     <main>
 
-        <div class="div__barra__pesquisa">
-            <input type="search" class="input__barra__pesquisa">
-            <button class="button__barra__pesquisa"><i class="ri-search-line"></i></button>
+        <div class="div__barra__pesquisa__mobile">
+            <input type="search" class="input__barra__pesquisa__mobile">
+            <button class="button__barra__pesquisa__mobile"><i class="ri-search-line"></i></button>
         </div>
 
         <!-- Mais procurados Begins -->
@@ -423,23 +428,9 @@
             <h1 class="secaoCard__titulo">Pesquisa</h1>
             <hr class="secaoCard__hr" />
 
-            <div class="secaoCard__main">
+            <!-- Container de cards -->
+            <div class="secaoCard__main"></div>
 
-                
-
-
-
-                <!-- Card fake starts -->
-
-                <!-- 
-                <div class="cardfake1"></div>
-                <div class="cardfake2"></div>
-                <div class="cardfake4"></div>
-                -->
-
-                <!-- Card fake ends -->
-
-            </div>
             <!-- Paginação -->
             <ul id="paginacao" class="paginacao"></ul>
 
@@ -513,7 +504,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- link swiper -->
     <script src="../js/swiper.js"></script>
-    <!-- link barra de pesquisa -->
+    <!-- link mostrar produtos-->
     <script src="../js/listaProdutos.js"></script>
 
 </body>

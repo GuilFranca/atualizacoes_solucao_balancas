@@ -1,4 +1,4 @@
-.div__barra__pesquisa{
+.div__barra__pesquisa, .div__barra__pesquisa__mobile {
     justify-self: center;
     width: 100%;
     padding-top: 1em;
@@ -6,25 +6,44 @@
     justify-content: center;
 }
 
-.input__barra__pesquisa{
+.input__barra__pesquisa, .input__barra__pesquisa__mobile {
     border: 1px solid black;
-    width: 85%;
+    width: 50%;
     margin: 0;
     border-radius: 15px 0 0 15px;
     border: 2px solid var(--dark-orange);
 }
 
-.button__barra__pesquisa{
+.button__barra__pesquisa, .button__barra__pesquisa__mobile {
     background-color: var(--dark-orange);
     color: white;
     border: none;
     border-radius: 0 15px 15px 0;
+    transition: ease 0.4s;
+}
+
+.button__barra__pesquisa:hover, .button__barra__pesquisa__mobile:hover {
+    background-color: var(--orange);
+    cursor: pointer;
+}
+
+.div__barra__pesquisa__mobile{
+    margin-bottom: 1em;
+}
+
+.input__barra__pesquisa__mobile{
+    width: 85%;
 }
 
 @media screen and (min-width: 1025px) {
-    .div__barra__pesquisa{
+    .div__barra__pesquisa {
         width: 95%;
         margin-bottom: 1em;
+        display: flex;
+    }
+
+    .div__barra__pesquisa__mobile {
+        display: none;
     }
 
 }
