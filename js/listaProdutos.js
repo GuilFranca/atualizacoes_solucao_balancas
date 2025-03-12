@@ -33,7 +33,7 @@ const listaProdutos = [
         cod: "905",
         preco: "R$4.250,00 à vista",
         categoria: "açougue",
-        subcategoria: "AMACIADORES DE BIFE",
+        subcategoria: "Amaciadores de Bife",
         maisProcurados: "sim",
         vezes: "",
         promocao: "",

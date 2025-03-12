@@ -20,29 +20,34 @@
         <header class="header">
             <nav class="nav contaier">
 
-                <div class="nav__data">
+            <div class="nav__data">
 
-                    <a href="../index.html"><img src="../images/logo.png" alt="Logo Solução Balanças"></a>
+                <a href="../index.html"><img src="../images/logo.png" alt="Logo Solução Balanças"></a>
 
-                    <div class="nav__toggle" id="nav-toggle">
+                <div class="div__barra__pesquisa">
+                    <input type="search" class="input__barra__pesquisa">
+                    <button class="button__barra__pesquisa"><i class="ri-search-line"></i></button>
+                </div>
 
-                        <p class="nav__catalogo">Catalogo</p>
-                        <i class="ri-menu-line nav__burger"></i>
-                        <i class="ri-close-line nav__close"></i>
+                <div class="nav__toggle" id="nav-toggle">
 
-                    </div>
-
-                    <div class="nav__link__descktop">
-
-                        <ul>
-                            <li><a href="../pages_navegation/assistencia.html">Assistência</a></li>
-                            <li><a href="../pages_navegation/contato.html">Contato</a></li>
-                            <li><a href="../pages_navegation/sobreNos.html">Sobre Nós</a></li>
-                        </ul>
-
-                    </div>
+                    <p class="nav__catalogo">Catalogo</p>
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
 
                 </div>
+
+                <div class="nav__link__descktop">
+
+                    <ul>
+                        <li><a href="../pages_navegation/assistencia.html">Assistência</a></li>
+                        <li><a href="../pages_navegation/contato.html">Contato</a></li>
+                        <li><a href="../pages_navegation/sobreNos.html">Sobre Nós</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
 
                 <!--=============== NAV MENU ===============-->
                 <div class="nav__menu" id="nav-menu">
@@ -616,8 +621,10 @@
         <script src="../js/header.js"></script>
         <!-- Java script related to the carrossel -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <!-- link swiper -->
+        <!-- link swiper page produto -->
         <script src="../js/mysyper2.js"></script>
+        <!-- link mostrar produtos -->
+        <script src="../js/listaProdutos.js"></script>
 
     </body>
 
