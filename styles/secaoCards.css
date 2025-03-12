@@ -118,6 +118,13 @@
     /* Padding menor no mobile */
 }
 
+@media screen and (min-width: 430px) {
+    .cardProduto {
+        width: 175px;
+        height: 350px;
+    }
+}
+
 @media screen and (min-width: 590px) {
     .secaoCard__main {
         grid-template-columns: repeat(3, 1fr);
