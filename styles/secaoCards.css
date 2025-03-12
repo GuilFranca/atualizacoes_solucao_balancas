@@ -98,7 +98,6 @@
 
 .secaoCard__main {
     grid-template-columns: repeat(2, 1fr);
-    /* 4 colunas */
     gap: 1em;
     /* Espaçamento padrão */
     justify-self: center;
@@ -117,13 +116,6 @@
 .cardProduto {
     padding: 0.5em;
     /* Padding menor no mobile */
-}
-
-@media screen and (min-width: 344px) {
-    .cardProduto {
-        width: 140px;
-        height: 350px;
-    }
 }
 
 @media screen and (min-width: 590px) {
