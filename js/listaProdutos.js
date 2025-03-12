@@ -26,6 +26,8 @@ const listaProdutos = [
     // },
 
 
+// Categoria Açougue
+    // subcategoria Amaciador de carne
     {
         nome: "AMACIADOR DE CARNE INOX ABS-HD",
         cod: "905",
@@ -36,6 +38,8 @@ const listaProdutos = [
         vezes: "",
         promocao: "",
     },
+
+    // subcategoria Facas
     {
         nome: "CHAIRA INOX LISA 5541-12 MUNDIAL",
         cod: "8298",
@@ -182,6 +186,110 @@ const listaProdutos = [
         preco: "R$45,00 à vista",
         categoria: "açougue",
         subcategoria: "facas",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+
+    // subcategoria Ganchos
+    {
+        nome: "GANCHO ESTANHADO",
+        cod: "588",
+        preco: "Faça Orçamento",
+        categoria: "açougue",
+        subcategoria: "ganchos",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "GANCHO FRANGO DUPLO",
+        cod: "7321",
+        preco: "R$15,00 à vista",
+        categoria: "açougue",
+        subcategoria: "ganchos",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "GANCHO FRANGO SIMPLES",
+        cod: "617",
+        preco: "R$12,00 à vista",
+        categoria: "açougue",
+        subcategoria: "ganchos",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "GANCHO GIRATORIO ESTANHADO",
+        cod: "592",
+        preco: "R$30,00 à vista",
+        categoria: "açougue",
+        subcategoria: "ganchos",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "GANCHO PARA DESOSSA",
+        cod: "7331",
+        preco: "R$30,00 à vista",
+        categoria: "açougue",
+        subcategoria: "ganchos",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+
+    // subcategoria Máquinas de Serrar Ossos
+    {
+        nome: "SERRA FITA SPOLU SPL-552",
+        cod: "10064",
+        preco: "R$2.600,00 à vista",
+        categoria: "açougue",
+        subcategoria: "máquinas de serrar ossos",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "SERRA FITA GURAL BRT40",
+        cod: "68",
+        preco: "R$11.300,00 à vista",
+        categoria: "açougue",
+        subcategoria: "máquinas de serrar ossos",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "SERRA FITA SKYMSEN SFL-282",
+        cod: "30166",
+        preco: "R$18.500,00 à vista",
+        categoria: "açougue",
+        subcategoria: "máquinas de serrar ossos",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "Serra Fita Botini B-152",
+        cod: "4818",
+        preco: "R$2.270,00 à vista",
+        categoria: "açougue",
+        subcategoria: "máquinas de serrar ossos",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "Serra Fita Bermar Bm-38 Nr 12",
+        cod: "3814",
+        preco: "R$9.600,00 à vista",
+        categoria: "açougue",
+        subcategoria: "máquinas de serrar ossos",
         maisProcurados: "",
         vezes: "",
         promocao: "",
