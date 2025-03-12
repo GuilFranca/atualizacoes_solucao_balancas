@@ -2,16 +2,25 @@ const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
         nav = document.getElementById(navId);
 
-    toggle.addEventListener('click', () => {
-        // Adiciona a classe show-menu ao menu de navegação
-        nav.classList.toggle('show-menu');
+    if (toggle && nav) {
+        toggle.addEventListener('click', () => {
+            // Adiciona ou remove a classe show-menu no menu de navegação
+            nav.classList.toggle('show-menu');
 
-        // Adiciona a classe show-icon para mostrar e esconder o ícone do menu
-        toggle.classList.toggle('show-icon');
-    });
+            // Adiciona ou remove a classe show-icon no botão de toggle
+            toggle.classList.toggle('show-icon');
+        });
+
+        // Remove as classes ao mudar de página
+        window.addEventListener('beforeunload', () => {
+            nav.classList.remove('show-menu');
+            toggle.classList.remove('show-icon');
+        });
+    }
 };
 
 showMenu('nav-toggle', 'nav-menu');
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const toggleDropdown = (dropdown) => {

@@ -43,6 +43,18 @@
         padding-top: 0;
     }
 
+    .carrossel__container{
+        width: 100%;
+        justify-self: center;
+    }    
+
+}
+
+@media screen and (min-width: 1024px) {
+    .carrossel__container{
+        width: 90%;
+        justify-self: center;
+    }    
 }
 
 @media screen and (min-width: 1025px){

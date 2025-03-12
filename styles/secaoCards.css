@@ -119,10 +119,16 @@
     /* Padding menor no mobile */
 }
 
+@media screen and (min-width: 344px) {
+    .cardProduto {
+        width: 140px;
+        height: 350px;
+    }
+}
+
 @media screen and (min-width: 590px) {
     .secaoCard__main {
         grid-template-columns: repeat(3, 1fr);
-        /* 5 colunas */
         gap: 1em;
         /* Espaçamento padrão */
         justify-self: center;
@@ -203,10 +209,9 @@
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1200px) {
     .secaoCard__main {
         grid-template-columns: repeat(4, 1fr);
-        /* 5 colunas */
         gap: 1.5em;
         /* Espaçamento padrão */
         justify-self: center;
@@ -214,6 +219,22 @@
 
     .cardProduto {
         width: 200px;
+        height: 375px;
+        justify-self: center;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .secaoCard__main {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1em;
+        row-gap: 1em;
+        /* Espaçamento padrão */
+        justify-self: center;
+    }
+
+    .cardProduto {
+        width: 195px;
         height: 375px;
         justify-self: center;
     }
