@@ -20,406 +20,6 @@ const listaProdutos = [
         promocao: "",
     },
     {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
         nome: 'PICADOR DE CARNES GURAL MGI-10',
         cod: "9530",
         preco: "3.690,07",
@@ -563,7 +163,6 @@ const botaoPesquisa = document.querySelector('.button__barra__pesquisa');
 // Verifica se a página atual é a index
 const estaNaIndex = window.location.pathname === '/' || window.location.pathname.endsWith('/index.html') || window.location.pathname.endsWith('/');
 
-
 // Define o caminho correto para os links de imagens e páginas
 const caminhoImagem = estaNaIndex ? "./images_produtos/" : "../images_produtos/";
 const caminhoPagina = estaNaIndex ? "./pages_produtos/" : "../pages_produtos/";
@@ -573,13 +172,39 @@ function pesquisarProdutos() {
     const termoPesquisa = inputPesquisa.value.trim().toLowerCase();
 
     if (termoPesquisa === '') {
-        // Se o campo estiver vazio, exibe todos os produtos
-        termoPesquisa = '';
-        mostrarProdutos(1);
-        return;
+        return; // Não faz nada se a pesquisa estiver vazia
     }
 
-    // Filtra os produtos que contenham o termo pesquisado no nome ou no código
+    // Salva o termo de pesquisa no localStorage
+    localStorage.setItem('termoPesquisa', termoPesquisa);
+
+    // Redireciona para a página de pesquisa
+    window.location.href = estaNaIndex ? './pages_navegation/pesquisa.html' : '../pages_navegation/pesquisa.html';
+}
+
+// Evento para ativar a pesquisa ao clicar no botão
+botaoPesquisa.addEventListener('click', pesquisarProdutos);
+
+// Evento para ativar a pesquisa ao pressionar "Enter" no campo de pesquisa
+inputPesquisa.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+        pesquisarProdutos();
+    }
+});
+
+// Se estiver na página de pesquisa, executar a busca automaticamente
+if (window.location.pathname.includes('pesquisa.html')) {
+    document.addEventListener('DOMContentLoaded', () => {
+        const termoPesquisa = localStorage.getItem('termoPesquisa') || '';
+        if (termoPesquisa) {
+            inputPesquisa.value = termoPesquisa; // Atualiza o campo de pesquisa
+            executarPesquisa(termoPesquisa);
+        }
+    });
+}
+
+// Função para carregar os produtos filtrados na página de pesquisa
+function executarPesquisa(termoPesquisa) {
     const produtosFiltrados = listaProdutos.filter(produto =>
         produto.nome.toLowerCase().includes(termoPesquisa) ||
         produto.cod.toLowerCase().includes(termoPesquisa) ||
@@ -590,17 +215,19 @@ function pesquisarProdutos() {
     const secaoCard = document.querySelector('.secaoCard__main');
     secaoCard.innerHTML = ''; // Limpa os produtos antes de exibir novos resultados
 
+    // Atualiza o título da seção
+    document.querySelector('.secaoCard__titulo').textContent = termoPesquisa || 'Pesquisa';
+
     if (produtosFiltrados.length === 0) {
         secaoCard.innerHTML = `<p>Nenhum produto encontrado.</p>`;
         document.querySelector('.paginacao').innerHTML = '';
-        document.querySelector('.secaoCard__titulo').textContent = `${termoPesquisa}`;
         return;
     }
 
     produtosFiltrados.forEach(produto => {
         const estaEmPromocao = produto.promocao.trim() !== '';
         const precoClasse = estaEmPromocao ? "promotion__color" : "";
-        document.querySelector('.secaoCard__titulo').textContent = `${termoPesquisa}`;
+
         secaoCard.innerHTML += `
             <div class="cardProduto">
                 <img src="${caminhoImagem}${produto.cod}.png" alt="${produto.nome}" class="cardProduto_img">
@@ -622,6 +249,7 @@ function pesquisarProdutos() {
     // Remove a paginação, pois a pesquisa exibe todos os resultados de uma vez
     document.querySelector('.paginacao').innerHTML = '';
 }
+
 
 // Evento para ativar a pesquisa ao clicar no botão
 botaoPesquisa.addEventListener('click', pesquisarProdutos);
