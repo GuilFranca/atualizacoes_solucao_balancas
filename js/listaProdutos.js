@@ -1,8 +1,35 @@
 const listaProdutos = [
+
+    // Modelo Produto/maisProcurados
+    // {
+    //     nome: "AMACIADOR DE CARNE INOX ABS-HD", 
+    //     cod: "905",
+    //     preco: "4.250,00",
+    //     categoria: "açougue",
+    //     subcategoria: "AMACIADORES DE BIFE",
+    //     maisProcurados: "sim",
+    //     vezes: "",
+    //     promocao: "",
+    // },
+
+
+    // Modelo Promoção
+    {
+        nome: 'AUTO SERVIÇO 3 PORTAS ASFL 2000', 
+        cod: "85",
+        preco: "R$14.400,00 à vista",
+        categoria: "Refrigeração",
+        subcategoria: "Auto Serviço",
+        maisProcurados: '',
+        vezes: "12,990 x6",
+        promocao: "10.990,00",
+    },
+
+
     {
         nome: "AMACIADOR DE CARNE INOX ABS-HD",
         cod: "905",
-        preco: "4.250,00",
+        preco: "R$4.250,00 à vista",
         categoria: "açougue",
         subcategoria: "AMACIADORES DE BIFE",
         maisProcurados: "sim",
@@ -10,115 +37,48 @@ const listaProdutos = [
         promocao: "",
     },
     {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
+        nome: "CHAIRA INOX LISA 5541-12 MUNDIAL",
+        cod: "8298",
+        preco: "R$75,00 à vista",
         categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
+        subcategoria: "facas",
+        maisProcurados: "",
         vezes: "",
         promocao: "",
     },
     {
-        nome: 'PICADOR DE CARNES GURAL MGI-10',
-        cod: "9530",
-        preco: "3.690,07",
-        categoria: "açougue",
-        subcategoria: "PICADORES DE CARNES",
-        maisProcurados: "sim",
+        nome: "Chaira inox Estriada 7840-12 Mundial",
+        cod: "398",
+        preco: "R$85,00 à vista",
+        categoria: "",
+        subcategoria: "",
+        maisProcurados: "",
         vezes: "",
         promocao: "",
     },
     {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
+        nome: "",
+        cod: "",
+        preco: "",
+        categoria: "",
+        subcategoria: "",
+        maisProcurados: "",
         vezes: "",
         promocao: "",
     },
+
+
     {
-        nome: 'PICADOR DE CARNES GURAL MGI-10',
-        cod: "9530",
-        preco: "3.690,07",
-        categoria: "açougue",
-        subcategoria: "PICADORES DE CARNES",
-        maisProcurados: "sim",
+        nome: "",
+        cod: "",
+        preco: "",
+        categoria: "",
+        subcategoria: "",
+        maisProcurados: "",
         vezes: "",
         promocao: "",
     },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'PICADOR DE CARNES GURAL MGI-10',
-        cod: "9530",
-        preco: "3.690,07",
-        categoria: "açougue",
-        subcategoria: "PICADORES DE CARNES",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'PICADOR DE CARNES GURAL MGI-10',
-        cod: "9530",
-        preco: "3.690,07",
-        categoria: "açougue",
-        subcategoria: "PICADORES DE CARNES",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'faca inox desossa 6" 5515-06 5500 mundial',
-        cod: "443",
-        preco: "52,00",
-        categoria: "açougue",
-        subcategoria: "FACAS",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'PICADOR DE CARNES GURAL MGI-10',
-        cod: "9530",
-        preco: "3.690,07",
-        categoria: "açougue",
-        subcategoria: "PICADORES DE CARNES",
-        maisProcurados: "sim",
-        vezes: "",
-        promocao: "",
-    },
-    {
-        nome: 'AUTO SERVIÇO 3 PORTAS ASFL 2000',
-        cod: "85",
-        preco: "14.400,00",
-        categoria: "Refrigeração",
-        subcategoria: "Auto Serviço",
-        maisProcurados: '',
-        vezes: "12,990 x6",
-        promocao: "10.990,00",
-    },
+
 ];
 
 // Função para ordenar a lista alfabeticamente pelo nome
@@ -198,6 +158,54 @@ function mostrarProdutos(pagina) {
     // Atualiza a paginação corretamente
     gerarPaginacao(pagina, totalProdutos);
 }
+
+
+function produtoPromocao() {
+    const containerInfo = document.querySelector('.container__infos');
+    const codigoElemento = document.querySelector('.p');
+
+    // Verifica se o elemento existe para evitar erro
+    if (!codigoElemento) {
+        console.error("Elemento com a classe '.p' não encontrado.");
+        return;
+    }
+
+    // Obtém o código do produto da página e remove espaços extras
+    const codigoPageProduto = codigoElemento.textContent.split(':')[1]?.trim();
+
+    // Verifica se o código foi extraído corretamente
+    if (!codigoPageProduto) {
+        console.error("Código do produto não encontrado no texto.");
+        return;
+    }
+
+    // Encontra o produto correspondente
+    const produto = listaProdutos.find(p => String(p.cod) === codigoPageProduto);
+
+    // Se encontrou o produto, exibe as informações corretas
+    if (produto) {
+        if (produto.promocao) { // Se tiver promoção, mostra os preços promocionais
+            containerInfo.innerHTML = `
+                <h1 class="infos__h1">${produto.nome}</h1>
+                <p class="p">Cod. do Produto: ${produto.cod}</p>
+                <h2 class="infos__h3 promotion__color">R$${produto.vezes}</h2>
+                <h2 class="infos__h2 promotion__color">R$${produto.promocao} à vista</h2>
+            `;
+        } else { // Caso contrário, exibe o preço normal
+            containerInfo.innerHTML = `
+                <h1 class="infos__h1">${produto.nome}</h1>
+                <p class="p">Cod. do Produto: ${produto.cod}</p>
+                <h2 class="infos__h2">R$${produto.preco}</h2>
+            `;
+        }
+    } else {
+        console.error("Produto não encontrado na lista.");
+    }
+}
+
+produtoPromocao();
+
+
 
 
 

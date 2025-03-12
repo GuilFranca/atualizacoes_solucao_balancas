@@ -57,7 +57,7 @@
 }
 
 .infos__h3 {
-    color: var(--green);
+    color: var(--blue-hover);
     font-size: 18px;
     font-weight: 400;
     /* text-decoration: line-through; */
