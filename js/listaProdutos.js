@@ -429,6 +429,49 @@ const listaProdutos = [
         promocao: "",
     },
 
+    // subcategoria serras fita
+    {
+        nome: "LÂMINA EDGETOOLS",
+        cod: "7368",
+        preco: "R$70,00 à vista",
+        categoria: "açougue",
+        subcategoria: "serras fita",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "LÂMINA MILL SERRAS",
+        cod: "7303",
+        preco: "R$45,00 à vista",
+        categoria: "açougue",
+        subcategoria: "serras fita",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "LÂMINA MUNDIAL",
+        cod: "8645",
+        preco: "R$70,00 à vista",
+        categoria: "açougue",
+        subcategoria: "serras fita",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "LÂMINA STARRETT",
+        cod: "404",
+        preco: "R$60,00 à vista",
+        categoria: "açougue",
+        subcategoria: "serras fita",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+
+
     {
         nome: "",
         cod: "",
