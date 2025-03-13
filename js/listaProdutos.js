@@ -1620,8 +1620,8 @@ function mostrarProdutos(pagina) {
     } else {
         // Filtra produtos por categoria ou subcategoria
         produtosFiltrados = listaProdutos.filter(produto =>
-            produto.categoria.toLowerCase() === secaoCardTitulo ||
-            produto.subcategoria.toLowerCase() === secaoCardTitulo
+            produto.categoria.toLowerCase().includes(secaoCardTitulo) ||
+            produto.subcategoria.toLowerCase().includes(secaoCardTitulo)
         );
     }
 
