@@ -1,6 +1,5 @@
 .input__barra__pesquisa {
     border: 1px solid black;
-    width: 50%;
     margin: 0;
     border-radius: 15px 0 0 15px;
     border: 2px solid var(--dark-orange);
@@ -25,7 +24,7 @@
 }
 
 .input__barra__pesquisa {
-    width: 80%;
+    width: 85%;
 }
 
 @media screen and (min-width: 768px) {
