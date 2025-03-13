@@ -34,3 +34,10 @@
 .ativo {
   background-color: var(--blue-hover);
 }
+
+@media screen and (min-width: 1800px) {
+  .paginacao {
+    margin-top: 2em;
+  }
+  
+}
