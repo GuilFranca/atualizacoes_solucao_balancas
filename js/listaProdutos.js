@@ -815,6 +815,9 @@ const listaProdutos = [
         vezes: "",
         promocao: "",
     },
+
+    // Categoria diversos
+    // Subcategoria caixas plasticas
     
 
 
