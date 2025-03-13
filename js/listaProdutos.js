@@ -397,6 +397,37 @@ const listaProdutos = [
         promocao: "",
     },
 
+    // subcategoria Máquinas de Serrar Ossos
+    {
+        nome: "BANDEJA DE PEAD MOD 178",
+        cod: "7334",
+        preco: "R$60,00 à vista",
+        categoria: "açougue",
+        subcategoria: "placas ped",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "PLACA DE PEAD PRETA C/CANALETA",
+        cod: "7950",
+        preco: "R$80,00 à vista",
+        categoria: "açougue",
+        subcategoria: "placas ped",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "PLACA DE PEAD BRANCA",
+        cod: "562",
+        preco: "Faça Orçamento",
+        categoria: "açougue",
+        subcategoria: "placas ped",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
 
     {
         nome: "",
