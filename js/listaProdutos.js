@@ -26,7 +26,7 @@ const listaProdutos = [
     // },
 
 
-// Categoria Açougue
+    // Categoria Açougue
     // subcategoria Amaciador de carne
     {
         nome: "AMACIADOR DE CARNE INOX ABS-HD",
@@ -471,7 +471,7 @@ const listaProdutos = [
         promocao: "",
     },
 
-// Categoria Automação
+    // Categoria Automação
     // Subcategoria checkout
     {
         nome: "ACABAMENTO CHECKOUT",
@@ -647,8 +647,8 @@ const listaProdutos = [
         vezes: "",
         promocao: "",
     },
-    
-    
+
+
 
     // subcategoria pdv
     {
@@ -733,7 +733,91 @@ const listaProdutos = [
         vezes: "",
         promocao: "",
     },
+
+    // Categoria balanças
+    {
+        nome: "Balança BK 300 Balmak",
+        cod: "10667",
+        preco: "R$1.550,00 à vista",
+        categoria: "balanças",
+        subcategoria: "",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "BALANÇA CHECKOUT 8217 32KG toledo",
+        cod: "8284",
+        preco: "R$2.350,00 à vista",
+        categoria: "balanças",
+        subcategoria: "",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "Balança checkout DP30kg Elgin",
+        cod: "6392",
+        preco: "R$1.750,00 à vista",
+        categoria: "balanças",
+        subcategoria: "",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "Balança Prix 4 Due",
+        cod: "1819",
+        preco: "R$10.500,00 à vista",
+        categoria: "balanças",
+        subcategoria: "",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "BALANÇA PRIX 5 PLUS",
+        cod: "6069",
+        preco: "R$11.690,00 à vista",
+        categoria: "balanças",
+        subcategoria: "",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "BALANÇA BA37-C URANO",
+        cod: "6968",
+        preco: "R$7.200,00 à vista",
+        categoria: "balanças",
+        subcategoria: "",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "Balança US 31/2 POP-S",
+        cod: "7090",
+        preco: "R$920,00",
+        categoria: "balanças",
+        subcategoria: "",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "Balança W-300 Welmy",
+        cod: "3313",
+        preco: "R$2.450,00 à vista",
+        categoria: "balanças",
+        subcategoria: "",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
     
+
+
 
 
     {
