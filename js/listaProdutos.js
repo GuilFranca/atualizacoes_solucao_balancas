@@ -14,16 +14,16 @@ const listaProdutos = [
 
 
     // Modelo Promoção
-    {
-        nome: 'AUTO SERVIÇO 3 PORTAS ASFL 2000', 
-        cod: "85",
-        preco: "R$14.400,00 à vista",
-        categoria: "Refrigeração",
-        subcategoria: "Auto Serviço",
-        maisProcurados: '',
-        vezes: "R$12,990 x6",
-        promocao: "R$10.990,00 à vista",
-    },
+    // {
+    //     nome: 'AUTO SERVIÇO 3 PORTAS ASFL 2000', 
+    //     cod: "85",
+    //     preco: "R$14.400,00 à vista",
+    //     categoria: "Refrigeração",
+    //     subcategoria: "Auto Serviço",
+    //     maisProcurados: '',
+    //     vezes: "R$12,990 x6",
+    //     promocao: "R$10.990,00 à vista",
+    // },
 
 
     // Categoria Açougue
@@ -1132,6 +1132,18 @@ const listaProdutos = [
         promocao: ""
     },
 
+    // subcategorias fogões
+    {
+        nome: "Fogão Industrial 8 Bocas P7 tradicional light.MR",
+        cod: "6658",
+        preco: "R$2.500,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "fogões",
+        maisProcurados: "",
+        vezes: "R$2.290 x6",
+        promocao: "R$1.900,00 à vista"
+    },
+
     // subcategorias fornos
     {
         nome: "Forno Eletrico Roma Pintado Fer 110 C/ Pedra 220v",
@@ -1172,6 +1184,16 @@ const listaProdutos = [
         maisProcurados: "",
         vezes: "",
         promocao: ""
+    },
+    {
+        nome: "Forno Gás Industrial FIRIV 110 PINTADO",
+        cod: "5549",
+        preco: "",
+        categoria: "gastronomia",
+        subcategoria: "fornos",
+        maisProcurados: "",
+        vezes: "R$3.990 x6",
+        promocao: "R$3.290,00 à vista"
     },
 
     // subcategoria fritadeiras
@@ -1287,10 +1309,267 @@ const listaProdutos = [
         vezes: "R$2.190 6x",
         promocao: "R$1.890,00 à vista"
     },
-    
-    
-    
-    
+
+    // subcategoria panelas
+    {
+        nome: "Panela Pressao Pol. Casa 12 Litros Abc Aluminio",
+        cod: "4578",
+        preco: "R$610,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "panelas",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "Panela Pressao Pol. Casa 15 Litros Abc Aluminio",
+        cod: "4579",
+        preco: "R$640,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "panelas",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "Panela Pressao Polida Casa 20 Litros Abc Aluminio",
+        cod: "4580",
+        preco: "R$685,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "panelas",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+
+    // subcategoria panificação
+    {
+        nome: "Amassadeira Semi Rapida M B I-25 1/2 Cv Gastromaq",
+        cod: "3271",
+        preco: "R$7.450,00 à vista",
+        categoria: "panificação",
+        subcategoria: "",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "Armario Pao Frances 40x60 Completo Baronesa",
+        cod: "3303",
+        preco: "R$2.500,00 à vista",
+        categoria: "panificação",
+        subcategoria: "",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "Bandeija Pão Frances Baronesa 40x60",
+        cod: "4172",
+        preco: "R$65,00 à vista",
+        categoria: "panificação",
+        subcategoria: "",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "Bandeija Pão Doce Aluminio Baronesa 40x60",
+        cod: "4527",
+        preco: "R$55,00 à vista",
+        categoria: "panificação",
+        subcategoria: "",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "Cilindro CLI-300 Mini 220v Gastromaq",
+        cod: "4844",
+        preco: "R$5.250,00 à vista",
+        categoria: "panificação",
+        subcategoria: "",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+
+    // categoria refrigeração
+    // subcategoria auto serviço
+    {
+        nome: "POLAR AUTO SERVIÇO 3 PORTAS",
+        cod: "9616",
+        preco: "R$11.200,00 à vista",
+        categoria: "refrigeração",
+        subcategoria: "auto serviço",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "POLAR AUTO SERVIÇO 4 PORTAS preto",
+        cod: "10278",
+        preco: "R$13.700,00 à vista",
+        categoria: "refrigeração",
+        subcategoria: "auto serviço",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "AUTO SERVIÇO 3 PORTAS ASFL 2000",
+        cod: "85",
+        preco: "R$10.990,00 à vista",
+        categoria: "refrigeração",
+        subcategoria: "auto serviço",
+        maisProcurados: "",
+        vezes: "R$ 12.990 x6",
+        promocao: "R$10.990,00 à vista",
+    },
+    {
+        nome: "AUTO SERVIÇO 5 PORTAS VANGUARD ECONOMY ASVR5P",
+        cod: "9865",
+        preco: "R$18.990,00 à vista",
+        categoria: "refrigeração",
+        subcategoria: "auto serviço",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+
+    // subcategoria cervejeiras 
+    {
+        nome: "Cervejeira Vertical VCF C/284-Porta Vidro 4cx Fricon",
+        cod: "3761",
+        preco: "R$6.100,00 à vista",
+        categoria: "refrigeração",
+        subcategoria: "cervejeiras",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "Cervejeira CCV-315 Porta De Vidro Capacidade 454 L Imbera Preta",
+        cod: "4801",
+        preco: "R$6.450,00 à vista",
+        categoria: "refrigeração",
+        subcategoria: "cervejeiras",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+
+    // subcategoria freezers
+    {
+        nome: "CONSERVADOR DE PROTEINAS 4 BANDEJAS MARCHESONI",
+        cod: "8461",
+        preco: "R$2.750,00 à vista",
+        categoria: "refrigeração",
+        subcategoria: "freezers",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "FREEZER HORIZONTAL PFH205B 220V",
+        cod: "9951",
+        preco: "R$2.600,00 à vista",
+        categoria: "refrigeração",
+        subcategoria: "freezers",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "FREEZER HORIZONTAL PFH260B",
+        cod: "10960",
+        preco: "R$2.950,00 à vista",
+        categoria: "refrigeração",
+        subcategoria: "freezers",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "FREEZER HORIZONTAL FRICON 503L HCED-503",
+        cod: "8754",
+        preco: "R$5.200,00 à vista",
+        categoria: "refrigeração",
+        subcategoria: "freezers",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+
+    // subcategoria ilhas
+    {
+        nome: "ILHA DUPLA AÇÃO 2MT PRETA POLAR LIGHT",
+        cod: "10713",
+        preco: "R$6.900,00 à vista",
+        categoria: "refrigeração",
+        subcategoria: "ilhas",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "ILHA DUPLA AÇÃO 3MT PRETA POLAR LIGHT",
+        cod: "10594",
+        preco: "R$10.900,00 à vista",
+        categoria: "refrigeração",
+        subcategoria: "ilhas",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+
+    // subcategoria visa cooler
+    {
+        nome: "REFRIGERADOR EXPOSITOR VERTICAL VRS16",
+        cod: "5565",
+        preco: "R$6.200,00 à vista",
+        categoria: "refrigeração",
+        subcategoria: "visa cooler",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "VISA COOLER IMBERA VR-08 BMAE LL PRT TGAL FSBRAEST",
+        cod: "7285",
+        preco: "R$4.990,00 à vista",
+        categoria: "refrigeração",
+        subcategoria: "visa cooler",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "VISA COOLER MULTIUSO ECONOMY 4 PORTAS",
+        cod: "9916",
+        preco: "R$16.500,00 à vista",
+        categoria: "refrigeração",
+        subcategoria: "visa cooler",
+        maisProcurados: "",
+        vezes: "R$13.990 x6",
+        promocao: "R$12.990,00 à vista",
+    },
+
+    // subcategoria vitrine refrigerada
+    {
+        nome: "Conservador Vertical VCFM/Vcv-402 Fricon",
+        cod: "3759",
+        preco: "R$5.800,00 à vista",
+        categoria: "refrigeração",
+        subcategoria: "vitrine refrigerada",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+
+
+
+
 
 
 
