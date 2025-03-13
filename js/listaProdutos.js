@@ -1056,6 +1056,29 @@ const listaProdutos = [
         vezes: "",
         promocao: ""
     },
+
+    // Categoria gastronomia
+    // Subcategoria chapa
+    {
+        nome: "Chapa Bifeteira Gas Metalcubas Cbg-600",
+        cod: "4245",
+        preco: "R$999,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "chapas",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "Chapa Venâncio PR 800E Stlyle",
+        cod: "10940",
+        preco: "R$1.999,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "chapas",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
     
     
 
