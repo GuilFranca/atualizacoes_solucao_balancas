@@ -197,6 +197,10 @@
     text-transform: uppercase;
 }
 
+.container__swiper-ajuste-de-tela{
+    padding-top: 35px;
+}
+
 @media screen and (min-width: 768px) {
 
     .swiper-button-prev::after,
