@@ -14,16 +14,16 @@ const listaProdutos = [
 
 
     // Modelo Promoção
-    // {
-    //     nome: 'AUTO SERVIÇO 3 PORTAS ASFL 2000', 
-    //     cod: "85",
-    //     preco: "R$14.400,00 à vista",
-    //     categoria: "Refrigeração",
-    //     subcategoria: "Auto Serviço",
-    //     maisProcurados: '',
-    //     vezes: "R$12,990 x6",
-    //     promocao: "R$10.990,00 à vista",
-    // },
+    {
+        nome: 'AUTO SERVIÇO 3 PORTAS ASFL 2000', 
+        cod: "85",
+        preco: "R$14.400,00 à vista",
+        categoria: "Refrigeração",
+        subcategoria: "Auto Serviço",
+        maisProcurados: '',
+        vezes: "R$12,990 x6",
+        promocao: "R$10.990,00 à vista",
+    },
 
 
     // Categoria Açougue
@@ -972,7 +972,7 @@ const listaProdutos = [
         vezes: "",
         promocao: ""
     },
-    
+
     // Subcategoria mesas
     {
         nome: "Ventilador de Mesa Turbo Eco 30cm Preto 52W Ventisol",
@@ -1079,6 +1079,216 @@ const listaProdutos = [
         vezes: "",
         promocao: "",
     },
+
+    // subcategoria cortadores de frios
+    {
+        nome: "Cortador de Frios Automático Inox FA-300 Skymsen",
+        cod: "10275",
+        preco: "R$11.400,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "cortadores de frios",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "CORTADOR DE FRIOS GURAL MODELO JXT-30 127V/220V/60Hz",
+        cod: "7510",
+        preco: "R$5.200,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "cortadores de frios",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "FATIADOR DE FRIOS TOLEDO PRIX 9300G SEMINOVO",
+        cod: "7694",
+        preco: "R$12.000,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "cortadores de frios",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "FATIADOR DE FRIOS GURAL AUTOMATICO AXT 33I 1/2 CV",
+        cod: "3438",
+        preco: "R$9.900,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "cortadores de frios",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "Fatiador De Frios Arbel 170 S 220v",
+        cod: "231",
+        preco: "R$1.560,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "cortadores de frios",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+
+    // subcategorias fornos
+    {
+        nome: "Forno Eletrico Roma Pintado Fer 110 C/ Pedra 220v",
+        cod: "284",
+        preco: "R$3.950,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "fornos",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "FORNO ROMA FIRI 60 45/60 VENANCIO GAS",
+        cod: "6095",
+        preco: "R$1.650,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "fornos",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "Forno Turbo Digitop Gas 10 Esteira 220v FTDG-10 Venancio",
+        cod: "4858",
+        preco: "R$11.900,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "fornos",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "FORNO TURBO ELETRICO VERMELHO PRP-004 PLUS",
+        cod: "6539",
+        preco: "R$2.900,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "fornos",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+
+    // subcategoria fritadeiras
+    {
+        nome: "Fritador Cuba Eletrico Metalcubas Frce-6 2 Cb",
+        cod: "3541",
+        preco: "R$1.550,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "fritadeiras",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "Fritador elétrico zona fria metal cubas FOE-15 MESA 8000W",
+        cod: "7850",
+        preco: "R$2.250,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "fritadeiras",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "Fritadeira Elétrica Agua E Oleo Siensem 220v Fc-N",
+        cod: "313",
+        preco: "R$2.750,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "fritadeiras",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "FRITADEIRA ELÉTRICA ZONA FRIA FZP8, 15 LITROS, INOX, DE PISO - 8.000 W 220 V",
+        cod: "9183",
+        preco: "R$3.230,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "fritadeiras",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+
+    // subcaegoria liquidificadores
+    {
+        nome: "LIQUIDIFICADOR COMERCIAL SKYMSEM LS-02 MBR-N",
+        cod: "1079",
+        preco: "R$1.400,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "liquidificadores",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "Liquidificador Industrial Skymsem Inox T A-04 MB",
+        cod: "3471",
+        preco: "R$1.360,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "liquidificadores",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "LIQUIDIFICADOR INDUSTRIAL SKYMSEM LB-25 MBR-N",
+        cod: "319",
+        preco: "R$3.200,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "liquidificadores",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "Liquidificador Industrial Skymsem LS-08 Mbr-N",
+        cod: "323",
+        preco: "R$1.650,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "liquidificadores",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "Liquidificador Industrial Skymsem T A-02 N",
+        cod: "324",
+        preco: "R$900,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "liquidificadores",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "Liquidificador Industrial Skymsem L B-15 Mbr-N",
+        cod: "318",
+        preco: "R$3.150,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "liquidificadores",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "Misturador coocktop 10L PRMQ-10 Progás",
+        cod: "8313",
+        preco: "R$1.890,00 à vista",
+        categoria: "gastronomia",
+        subcategoria: "liquidificadores",
+        maisProcurados: "",
+        vezes: "R$2.190 6x",
+        promocao: "R$1.890,00 à vista"
+    },
+    
+    
     
     
 
@@ -1162,8 +1372,8 @@ function mostrarProdutos(pagina) {
                 <p class="cardProduto_cod">Cod: ${produto.cod}</p>
                 <p class="cardProduto_preco ${precoClasse}">
                     ${estaEmPromocao ? `
-                        <span class="preco-antigo">R$${produto.vezes}</span> <br> 
-                        <span class="preco-novo">R$${produto.promocao} à vista</span>
+                        <span class="preco-antigo">${produto.vezes}</span> <br> 
+                        <span class="preco-novo">${produto.promocao}</span>
                     ` : `
                         ${produto.preco}
                     `}
@@ -1206,14 +1416,14 @@ function produtoPromocao() {
             containerInfo.innerHTML = `
                 <h1 class="infos__h1">${produto.nome}</h1>
                 <p class="p">Cod. do Produto: ${produto.cod}</p>
-                <h2 class="infos__h3 promotion__color">R$${produto.vezes}</h2>
-                <h2 class="infos__h2 promotion__color">R$${produto.promocao} à vista</h2>
+                <h2 class="infos__h3 promotion__color">${produto.vezes}</h2>
+                <h2 class="infos__h2 promotion__color">${produto.promocao}</h2>
             `;
         } else { // Caso contrário, exibe o preço normal
             containerInfo.innerHTML = `
                 <h1 class="infos__h1">${produto.nome}</h1>
                 <p class="p">Cod. do Produto: ${produto.cod}</p>
-                <h2 class="infos__h2">R$${produto.preco}</h2>
+                <h2 class="infos__h2">${produto.preco}</h2>
             `;
         }
     } else {
