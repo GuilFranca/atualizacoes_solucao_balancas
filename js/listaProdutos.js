@@ -21,8 +21,8 @@ const listaProdutos = [
     //     categoria: "Refrigeração",
     //     subcategoria: "Auto Serviço",
     //     maisProcurados: '',
-    //     vezes: "12,990 x6",
-    //     promocao: "10.990,00",
+    //     vezes: "R$12,990 x6",
+    //     promocao: "R$10.990,00 à vista",
     // },
 
 
@@ -562,7 +562,7 @@ const listaProdutos = [
         cod: "7226",
         preco: "R$520,00 à vista",
         categoria: "automação",
-        subcategoria: ["gôndolas", "gondolas"],
+        subcategoria: "gôndolas gondolas",
         maisProcurados: "",
         vezes: "",
         promocao: "",
@@ -572,7 +572,7 @@ const listaProdutos = [
         cod: "7227",
         preco: "R$520,00 à vista",
         categoria: "automação",
-        subcategoria: ["gôndolas", "gondolas"],
+        subcategoria: "gôndolas gondolas",
         maisProcurados: "",
         vezes: "",
         promocao: "",
@@ -582,7 +582,7 @@ const listaProdutos = [
         cod: "5313",
         preco: "R$520,00 à vista",
         categoria: "automação",
-        subcategoria: ["gôndolas", "gondolas"],
+        subcategoria: "gôndolas gondolas",
         maisProcurados: "",
         vezes: "",
         promocao: "",
@@ -592,7 +592,7 @@ const listaProdutos = [
         cod: "4947",
         preco: "R$1.550,00 à vista",
         categoria: "automação",
-        subcategoria: ["gôndolas", "gondolas"],
+        subcategoria: "gôndolas gondolas",
         maisProcurados: "",
         vezes: "",
         promocao: "",
@@ -602,7 +602,7 @@ const listaProdutos = [
         cod: "6432",
         preco: "R$990,00 à vista",
         categoria: "automação",
-        subcategoria: ["gôndolas", "gondolas"],
+        subcategoria: "gôndolas gondolas",
         maisProcurados: "",
         vezes: "",
         promocao: "",
@@ -612,7 +612,7 @@ const listaProdutos = [
         cod: "6812",
         preco: "R$1.200,00 à vista",
         categoria: "automação",
-        subcategoria: ["gôndolas", "gondolas"],
+        subcategoria: "gôndolas gondolas",
         maisProcurados: "",
         vezes: "",
         promocao: "",
@@ -622,7 +622,7 @@ const listaProdutos = [
         cod: "3697",
         preco: "R$750,00 à vista",
         categoria: "automação",
-        subcategoria: ["gôndolas", "gondolas"],
+        subcategoria: "gôndolas gondolas",
         maisProcurados: "",
         vezes: "",
         promocao: "",
@@ -632,7 +632,7 @@ const listaProdutos = [
         cod: "9805",
         preco: "R$840,00 à vista",
         categoria: "automação",
-        subcategoria: ["gôndolas", "gondolas"],
+        subcategoria: "gôndolas gondolas",
         maisProcurados: "",
         vezes: "",
         promocao: "",
@@ -642,11 +642,12 @@ const listaProdutos = [
         cod: "6981",
         preco: "R$820,00 à vista",
         categoria: "automação",
-        subcategoria: ["gôndolas", "gondolas"],
+        subcategoria: "gôndolas gondolas",
         maisProcurados: "",
         vezes: "",
         promocao: "",
     },
+    
     
 
     // subcategoria pdv
@@ -990,10 +991,10 @@ function executarPesquisa(termoPesquisa) {
                 <p class="cardProduto_cod">Cod: ${produto.cod}</p>
                 <p class="cardProduto_preco ${precoClasse}">
                     ${estaEmPromocao ? `
-                        <span class="preco-antigo">R$${produto.vezes}</span> <br> 
-                        <span class="preco-novo">R$${produto.promocao} à vista</span>
+                        <span class="preco-antigo">${produto.vezes}</span> <br> 
+                        <span class="preco-novo">${produto.promocao}</span>
                     ` : `
-                        R$${produto.preco} à vista
+                        ${produto.preco}
                     `}
                 </p>
                 <a href="${caminhoPagina}${produto.cod}.html" class="cardProduto_link">Saiba Mais</a>
