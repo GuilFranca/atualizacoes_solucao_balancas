@@ -514,6 +514,48 @@ const listaProdutos = [
         promocao: "",
     },
 
+    // Subcategoria gaveteiros
+    {
+        nome: "GAVETEIRO GD-56 BEMATECH ELGIN",
+        cod: "6683",
+        preco: "R$560,00 à vista",
+        categoria: "automação",
+        subcategoria: "gaveteiros",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "Gaveteiro Manual C/Pino Impulsao Grafite",
+        cod: "24",
+        preco: "R$365,00 à vista",
+        categoria: "automação",
+        subcategoria: "gaveteiros",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "Porta dinheiro (Niqueleira) C/Fioxador",
+        cod: "35",
+        preco: "R$75,00 à vista",
+        categoria: "automação",
+        subcategoria: "gaveteiros",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "Porta Dinheiro Amapa",
+        cod: "5178",
+        preco: "R$125,00 à vista",
+        categoria: "automação",
+        subcategoria: "gaveteiros",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+
 
     {
         nome: "",
