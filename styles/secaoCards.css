@@ -105,7 +105,7 @@
 }
 
 .cardProduto {
-    width: 155px;
+    width: 165px;
     height: 315px;
 }
 
@@ -120,7 +120,7 @@
 
 @media screen and (min-width: 430px) {
     .cardProduto {
-        width: 180px;
+        width: 175px;
         height: 350px;
     }
 }
