@@ -818,7 +818,247 @@ const listaProdutos = [
 
     // Categoria diversos
     // Subcategoria caixas plasticas
+    {
+        nome: "BANDEJA S-300 FAST-FOOD POLIPROPILENO",
+        cod: "5280",
+        preco: "R$20,00 à vista",
+        categoria: "diversos",
+        subcategoria: "caixas plásticas caixas plasticas",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "CAIXA C/ TAMPA S.500 11 LITROS",
+        cod: "2698",
+        preco: "R$53,00 à vista",
+        categoria: "diversos",
+        subcategoria: "caixas plásticas caixas plasticas",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "Caixa C/ Tampa S.350 4,5 Litros",
+        cod: "4429",
+        preco: "R$28,00 à vista",
+        categoria: "diversos",
+        subcategoria: "caixas plásticas caixas plasticas",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "CAIXA NC 280 NATURAL",
+        cod: "9777",
+        preco: "R$75,00 à vista",
+        categoria: "diversos",
+        subcategoria: "caixas plásticas caixas plasticas",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "CESTA S.1200 ALÇA/RODA PLASTICA 30 LITROS",
+        cod: "6097",
+        preco: "R$125,00 à vista",
+        categoria: "diversos",
+        subcategoria: "caixas plásticas caixas plasticas",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+
+    // Subcategoria exaustores
+    {
+        nome: "Ventilador Axial Exaustor Ind 25Cm 220 Premium",
+        cod: "5279",
+        preco: "R$215,00 à vista",
+        categoria: "diversos",
+        subcategoria: "exaustores",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "Ventilador Axial Exaustor Ind 30Cm 220 Premium",
+        cod: "4750",
+        preco: "R$280,00 à vista",
+        categoria: "diversos",
+        subcategoria: "exaustores",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "Ventilador Axial Exaustor Ind 40Cm 220 Premium",
+        cod: "4751",
+        preco: "R$299,00 à vista",
+        categoria: "diversos",
+        subcategoria: "exaustores",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "Ventilador Axial Exaustor Ind 50Cm 220 Premium",
+        cod: "4752",
+        preco: "R$345,00 à vista",
+        categoria: "diversos",
+        subcategoria: "exaustores",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+
+    // Subcategoria mesas
+    {
+        nome: "CADEIRA BISTRO MISTA PLASTICO",
+        cod: "8887",
+        preco: "R$50,00 à vista",
+        categoria: "diversos",
+        subcategoria: "mesas",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "Cadeira Bistro Dobravel Madeira Madesil",
+        cod: "50028",
+        preco: "R$175,00 à vista",
+        categoria: "diversos",
+        subcategoria: "mesas",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "MESA DOBRAVEL DE MADEIRA MADESIL",
+        cod: "6617",
+        preco: "R$395,00 à vista",
+        categoria: "diversos",
+        subcategoria: "mesas",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "MESA QUADRADA MISTA PLASTICO",
+        cod: "8318",
+        preco: "R$91,00 à vista",
+        categoria: "diversos",
+        subcategoria: "mesas",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "Mesa Bistro Dobravel Madeira Madesil",
+        cod: "50029",
+        preco: "R$265,00 à vista",
+        categoria: "diversos",
+        subcategoria: "mesas",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "Mesa Inox 430",
+        cod: "7731",
+        preco: "R$1.300,00 à vista",
+        categoria: "diversos",
+        subcategoria: "mesas",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
     
+    // Subcategoria mesas
+    {
+        nome: "Ventilador de Mesa Turbo Eco 30cm Preto 52W Ventisol",
+        cod: "6660",
+        preco: "R$170,00 à vista",
+        categoria: "diversos",
+        subcategoria: "Ventiladores",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "Ventilador Parede 60cm New GrPr Premium",
+        cod: "5593",
+        preco: "R$330,00 à vista",
+        categoria: "diversos",
+        subcategoria: "Ventiladores",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+
+    // Categoria etiquetas
+    {
+        nome: "ETIQUETA CORAÇÃO 64X80",
+        cod: "7910",
+        preco: "R$80,00 à vista",
+        categoria: "etiquetas",
+        subcategoria: "",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "ETIQUETA REDONDA",
+        cod: "6690",
+        preco: "Faça Orçamento",
+        categoria: "etiquetas",
+        subcategoria: "",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "ETIQUETA DE GONDOLA",
+        cod: "891",
+        preco: "R$35,00 à vista",
+        categoria: "etiquetas",
+        subcategoria: "",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "ETIQUETA OPEN",
+        cod: "897",
+        preco: "R$3,50 à vista",
+        categoria: "etiquetas",
+        subcategoria: "",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "ETIQUETA PERSONALIZADA",
+        cod: "000",
+        preco: "Faça Orçamento",
+        categoria: "etiquetas",
+        subcategoria: "",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    {
+        nome: "ETIQUETA TERMICA",
+        cod: "880",
+        preco: "Faça Orçamento",
+        categoria: "etiquetas",
+        subcategoria: "",
+        maisProcurados: "",
+        vezes: "",
+        promocao: ""
+    },
+    
+    
+
 
 
 
