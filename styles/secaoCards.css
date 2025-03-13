@@ -102,7 +102,6 @@
     gap: 1em;
     /* Espaçamento padrão */
     justify-self: center;
-    min-height: 45vh;
 }
 
 .cardProduto {
@@ -241,6 +240,10 @@
 }
 
 @media screen and (min-width: 1800px) {
+    .secaoMaisProcurados {
+        min-height: 35vh;
+    }
+
     .secaoCard__main {
         grid-template-columns: repeat(5, 1fr);
         /* 5 colunas */
@@ -250,8 +253,8 @@
     }
 
     .cardProduto {
-        width: 95%;
-        height: 100%;
+        width: 240px;
+        height: 390px;
         justify-self: center;
     }
 }
