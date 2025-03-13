@@ -295,7 +295,7 @@ const listaProdutos = [
         promocao: "",
     },
 
-    // subcategoria Máquinas de Serrar Ossos
+    // subcategoria picadores de carne
     {
         nome: "CONJUNTO CRUZETA/DISCO INOX NR 22-5MM",
         cod: "2709",
@@ -466,6 +466,49 @@ const listaProdutos = [
         preco: "R$60,00 à vista",
         categoria: "açougue",
         subcategoria: "serras fita",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+
+// Categoria Automação
+    // Subcategoria checkout
+    {
+        nome: "ACABAMENTO CHECKOUT",
+        cod: "6409",
+        preco: "Confira Nosso Orçamento",
+        categoria: "automação",
+        subcategoria: "checkout",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "CADEIRA CAIXA CHECKOUT AZUL",
+        cod: "6815",
+        preco: "R$380,00 à vista",
+        categoria: "automação",
+        subcategoria: "checkout",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "CADEIRA CAIXA CHECKOUT PRETO",
+        cod: "10019",
+        preco: "R$495,00 à vista",
+        categoria: "automação",
+        subcategoria: "checkout",
+        maisProcurados: "",
+        vezes: "",
+        promocao: "",
+    },
+    {
+        nome: "Check Out Amapa Sem Acabamento",
+        cod: "5429",
+        preco: "R$2.700,00 à vista",
+        categoria: "automação",
+        subcategoria: "checkout",
         maisProcurados: "",
         vezes: "",
         promocao: "",
