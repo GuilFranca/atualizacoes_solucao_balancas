@@ -798,7 +798,7 @@ const listaProdutos = [
     {
         nome: "Balança US 31/2 POP-S",
         cod: "7090",
-        preco: "R$920,00",
+        preco: "R$920,00 à vista",
         categoria: "balanças",
         subcategoria: "",
         maisProcurados: "sim",
