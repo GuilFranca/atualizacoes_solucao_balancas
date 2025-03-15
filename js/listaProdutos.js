@@ -1712,9 +1712,26 @@ function produtoPromocao() {
 
 produtoPromocao();
 
+function moveTela() {
+    const device = window.innerWidth;
 
+    // console.log(device);
 
+    if (device == 390) {
+        window.scrollTo({ top: 280, behavior: 'smooth' });
+    } else if (device == 768) {
+        window.scrollTo({ top: 400, behavior: 'smooth' });
+    } else if (device == 1024) {
+        window.scrollTo({ top: 430, behavior: 'smooth' });
+    } else if (device == 1410) {
+        window.scrollTo({ top: 520, behavior: 'smooth' });
+    } else if (device == 1876) {
+        window.scrollTo({ top: 630, behavior: 'smooth' });
+    } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
 
+}
 
 
 // Atualiza a paginação corretamente com base nos produtos filtrados
@@ -1729,7 +1746,10 @@ function gerarPaginacao(pagina, totalProdutos) {
     botaoAnterior.classList.add('btn__pagination');
     botaoAnterior.innerHTML = '<i class="ri-arrow-left-double-line"></i>';
     botaoAnterior.disabled = pagina === 1;
-    botaoAnterior.addEventListener('click', () => mostrarProdutos(pagina - 1));
+    botaoAnterior.addEventListener('click', () => {
+        mostrarProdutos(pagina - 1);
+        moveTela();
+    });
     secaoPaginacao.appendChild(botaoAnterior);
 
     for (let i = 1; i <= totalPaginas; i++) {
@@ -1737,7 +1757,10 @@ function gerarPaginacao(pagina, totalProdutos) {
         botaoPagina.classList.add('btn__pagination');
         botaoPagina.textContent = i;
         if (i === pagina) botaoPagina.classList.add('ativo');
-        botaoPagina.addEventListener('click', () => mostrarProdutos(i));
+        botaoPagina.addEventListener('click', () => {
+            mostrarProdutos(i);
+            moveTela();
+        });
         secaoPaginacao.appendChild(botaoPagina);
     }
 
@@ -1745,10 +1768,12 @@ function gerarPaginacao(pagina, totalProdutos) {
     botaoProximo.classList.add('btn__pagination');
     botaoProximo.innerHTML = '<i class="ri-arrow-right-double-line"></i>';
     botaoProximo.disabled = pagina === totalPaginas;
-    botaoProximo.addEventListener('click', () => mostrarProdutos(pagina + 1));
+    botaoProximo.addEventListener('click', () => {
+        mostrarProdutos(pagina + 1);
+        moveTela();
+    });
     secaoPaginacao.appendChild(botaoProximo);
 
-    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 // Captura os elementos da barra de pesquisa
